@@ -943,8 +943,10 @@ body {
 }
 
 .site {
-	background: transparent url("images/header-background.png") repeat-x 0 0;
 	position: relative;
+	#overlay {
+		display: none;
+	}
 }
 
 .site-header,
@@ -955,11 +957,17 @@ body {
 }
 
 .site-header {
-	max-width: 60.75em;
+	background: $body-bgcolor url("images/header-background.png") repeat-x 0 0;
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+	.site-header-content {
+		max-width: 60.75em;
+		margin: 0 auto;
+	}
 }
 
 .site-header {
-	padding: 0 0 0 0;
 	.site-utility {
 		height: 50px;
 		float: right;
@@ -1061,6 +1069,10 @@ body {
 	}
 }
 
+.site-content {
+	position: relative;
+	top: 10.625em;
+}
 
 .site-footer {
 	height: 146px;
@@ -1101,13 +1113,81 @@ body {
 }
 
 @media screen and (max-width: 45.6em) {
-		.site-header {
+	.site.toggled {
+		#overlay {
+			background: #000;
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.8;
+			position: fixed;
+			top: 0;
+			width: 100%;
+			z-index: 12;
+		}
+	}
+	.site-header {
+		.site-title img {
+			height: 50px;
+			width: 90px;
+		}
+		.menu-toggle {
+			background: transparent url("images/mobile-nav-icon.png") no-repeat 0 0;
+			border: none;
+			box-shadow: none;
+			height: 40px;
+			margin: 0;	
+			padding: 0;
+			position: absolute;
+			right: 1.875em;
+			top: 5.5em;
+			width: 40px;
+			z-index: 15;
+		}
+		
+		.main-navigation.toggled {	
+			background: $body-bgcolor;
+			height: 100%;
+			position: absolute;
+			right: 0;	
+			z-index: 15;
+			.menu-toggle {
+				background: url("images/mobile-nav-close.png");
+				right: 10px;
+				top: 10px;
+				z-index: 15;
+			}
+			
+			.nav-menu {
+				position: relative;
+				top: 60px;
+				z-index: 15;
+				li:first-child {
+					border-top: 1px solid $mnsub-border;
+				}
+				li {
+					border-bottom: 1px solid $mnsub-border;
+					a {
+						padding: 10px 90px 10px 15px;
+					}
+					
+				}
+				li:hover {
+					ul {
+						display: none;
+					}
+				}
+			}
+		}
+		
 		// Desktop Main Nav
 		.main-navigation {
 			.nav-menu {
 				margin-right: 0;
 			}
 			.nav-menu li {
+				clear: both;
+				float: none;
 				a{
 					padding: 0 0;
 				}
