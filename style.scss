@@ -640,7 +640,7 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 44em) {
+@media screen and (min-width: 45.625em) {
 	.menu-toggle {
 		display: none;
 	}
@@ -991,9 +991,8 @@ body {
 		clear: both;
 		float: left;
 		height: 120px;
-		margin-left: 2em;
 		.site-title {
-			margin: 1.25em 0 0;
+			margin: .5em 0 0 2em;
 			float: left;
 		}
 	}
@@ -1077,7 +1076,7 @@ body {
 }
 
 
-@media screen and (max-width: 54em) and (min-width: 44em) {
+@media screen and (max-width: 55.625em) and (min-width: 45.6em) {
 	
 	.site-header {
 		// Desktop Main Nav
@@ -1101,7 +1100,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 44em) {
+@media screen and (max-width: 45.6em) {
 		.site-header {
 		// Desktop Main Nav
 		.main-navigation {

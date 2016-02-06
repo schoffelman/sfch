@@ -521,7 +521,7 @@ a:active {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 44em) {
+@media screen and (min-width: 45.625em) {
   .menu-toggle {
     display: none; }
 
@@ -819,10 +819,9 @@ body {
   .site-header .site-branding {
     clear: both;
     float: left;
-    height: 120px;
-    margin-left: 2em; }
+    height: 120px; }
     .site-header .site-branding .site-title {
-      margin: 1.25em 0 0;
+      margin: .5em 0 0 2em;
       float: left; }
   .site-header .main-navigation {
     /*
@@ -877,7 +876,7 @@ body {
     height: 80px;
     pading-top: 20px; }
 
-@media screen and (max-width: 54em) and (min-width: 44em) {
+@media screen and (max-width: 55.625em) and (min-width: 45.6em) {
   .site-header .main-navigation .nav-menu li a {
     padding: 1.5em 1em; }
   .site-header .main-navigation .nav-menu li .sub-menu {
@@ -887,7 +886,7 @@ body {
       padding: 0; }
       .site-header .main-navigation .nav-menu li .sub-menu li a {
         padding: .5em 1em; } }
-@media screen and (max-width: 44em) {
+@media screen and (max-width: 45.6em) {
   .site-header .main-navigation .nav-menu {
     margin-right: 0; }
   .site-header .main-navigation .nav-menu li a {
