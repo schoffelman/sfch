@@ -5,8 +5,9 @@
  * support for dropdown menus.
  */
 ( function() {
-	var container, button, menu, links, subMenus;
+	var container, button, menu, links, subMenus, siteId;
 
+	siteId = document.getElementById( 'page' );
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
 		return;
@@ -39,6 +40,11 @@
 			container.className += ' toggled';
 			button.setAttribute( 'aria-expanded', 'true' );
 			menu.setAttribute( 'aria-expanded', 'true' );
+		}
+		if ( -1 !== siteId.className.indexOf( 'toggled' ) ) {
+			siteId.className = siteId.className.replace( ' toggled', '');
+		} else {
+			siteId.className += ' toggled';
 		}
 	};
 
