@@ -840,8 +840,12 @@ body {
         padding: .5em 1em; }
   .site-header .main-navigation .nav-menu li:hover {
     background: #e8e1e1; }
+    .site-header .main-navigation .nav-menu li:hover a {
+      color: #ec1c24; }
     .site-header .main-navigation .nav-menu li:hover .sub-menu {
       background: #e8e1e1; }
+      .site-header .main-navigation .nav-menu li:hover .sub-menu a {
+        color: #776c6c; }
       .site-header .main-navigation .nav-menu li:hover .sub-menu a:hover {
         background: #ec1c24;
         color: #f5eeee; }

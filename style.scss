@@ -1022,8 +1022,14 @@ body {
 		}
 		.nav-menu li:hover {
 			background: $mnbg-active;
+			a {
+				color: $mn-hover;
+			}
 			.sub-menu {
 				background: $mnbg-active;
+				a {
+					color: $mn-inactive;
+				}
 				a:hover {
 					background: $mn-hover;
 					color: $body-bgcolor;
