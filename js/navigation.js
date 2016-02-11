@@ -5,11 +5,13 @@
  * support for dropdown menus.
  */
 ( function() {
-	var container, button, menu, links, subMenus, siteId, overlay;
+	var container, button, menu, links, subMenus, siteId, overlay, parent, children=[];
 
 	siteId = document.getElementById( 'page' );
 	overlay = document.getElementById( 'overlay' );
 	container = document.getElementById( 'site-navigation' );
+	
+	
 	if ( ! container ) {
 		return;
 	}
@@ -31,6 +33,23 @@
 	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
 		menu.className += ' nav-menu';
 	}
+	
+	
+	
+	parent = document.getElementsByClassName( 'menu-item-has-children' );
+	
+	for (i = 0; i < parent.length; i++) {
+		children[i] = document.getElementById( parent[i].id );
+		
+		children[i].onclick = function() {
+			if ( -1 === this.className.indexOf( 'toggled' ) ) {
+				this.className += ' toggled';
+			} else {
+				this.className = this.className.replace( ' toggled', '');
+			}
+		};
+	}
+
 	
 	overlay.onclick = function() {
 		if ( -1 !== siteId.className.indexOf( 'toggled' ) ) {
