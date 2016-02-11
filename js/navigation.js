@@ -5,9 +5,10 @@
  * support for dropdown menus.
  */
 ( function() {
-	var container, button, menu, links, subMenus, siteId;
+	var container, button, menu, links, subMenus, siteId, overlay;
 
 	siteId = document.getElementById( 'page' );
+	overlay = document.getElementById( 'overlay' );
 	container = document.getElementById( 'site-navigation' );
 	if ( ! container ) {
 		return;
@@ -30,6 +31,16 @@
 	if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
 		menu.className += ' nav-menu';
 	}
+	
+	overlay.onclick = function() {
+		if ( -1 !== siteId.className.indexOf( 'toggled' ) ) {
+			siteId.className = siteId.className.replace( ' toggled', '');
+			container.className = container.className.replace( ' toggled', '' );
+		} else {
+			siteId.className += ' toggled';
+			container.className += ' toggled';
+		}
+	};
 
 	button.onclick = function() {
 		if ( -1 !== container.className.indexOf( 'toggled' ) ) {

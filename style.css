@@ -939,12 +939,24 @@ body {
       z-index: 15; }
       .site-header .main-navigation.toggled .nav-menu li:first-child {
         border-top: 1px solid #beb5b5; }
+      .site-header .main-navigation.toggled .nav-menu li.menu-item-has-children {
+        background: #f5eeee url("images/mobile-nav-plus.png") no-repeat 90% 50%; }
+        .site-header .main-navigation.toggled .nav-menu li.menu-item-has-children a {
+          padding: 10px 90px 10px 15px; }
       .site-header .main-navigation.toggled .nav-menu li {
         border-bottom: 1px solid #beb5b5; }
         .site-header .main-navigation.toggled .nav-menu li a {
-          padding: 10px 90px 10px 15px; }
+          margin-right: 50px;
+          padding: 10px 40px 10px 15px; }
+      .site-header .main-navigation.toggled .nav-menu li.menu-item-has-children:hover {
+        background: #f5eeee url("images/mobile-nav-plus.png") no-repeat 90% 50%;
+        cursor: pointer; }
+      .site-header .main-navigation.toggled .nav-menu li:hover a:hover {
+        background: #f5eeee; }
       .site-header .main-navigation.toggled .nav-menu li:hover ul {
         display: none; }
+      .site-header .main-navigation.toggled .nav-menu li.menu-item-has-children:active {
+        background: #e8e1e1 url("images/mobile-nav-minus.png") no-repeat 90% 50%; }
   .site-header .main-navigation .nav-menu {
     margin-right: 0; }
   .site-header .main-navigation .nav-menu li {

@@ -1116,6 +1116,7 @@ body {
 	.site.toggled {
 		#overlay {
 			background: #000;
+			//border-right: 195px solid $body-bgcolor;
 			display: block;
 			height: 100%;
 			left: 0;
@@ -1165,17 +1166,33 @@ body {
 				li:first-child {
 					border-top: 1px solid $mnsub-border;
 				}
-				li {
-					border-bottom: 1px solid $mnsub-border;
+				li.menu-item-has-children {
+					background: $body-bgcolor url("images/mobile-nav-plus.png") no-repeat 90% 50%;
 					a {
 						padding: 10px 90px 10px 15px;
 					}
-					
+				}
+				li {
+					border-bottom: 1px solid $mnsub-border;
+					a {
+						margin-right: 50px;
+						padding: 10px 40px 10px 15px;
+					}
+				}
+				li.menu-item-has-children:hover {
+					background: $body-bgcolor url("images/mobile-nav-plus.png") no-repeat 90% 50%;
+					cursor: pointer;
 				}
 				li:hover {
+					a:hover {
+						background: $body-bgcolor;
+					}
 					ul {
 						display: none;
 					}
+				}
+				li.menu-item-has-children:active {
+					background: $mnbg-active url("images/mobile-nav-minus.png") no-repeat 90% 50%;
 				}
 			}
 		}
