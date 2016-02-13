@@ -39,14 +39,32 @@
 	parent = document.getElementsByClassName( 'menu-item-has-children' );
 	
 	for (i = 0; i < parent.length; i++) {
+	
 		children[i] = document.getElementById( parent[i].id );
 		
+		// when a has-children nav item is clicked, do the following:
 		children[i].onclick = function() {
+			
+			// loop through the has-children nav items
+			for (i = 0; i < parent.length; i++) {
+			
+				// select the items that are expanded
+				if ( -1 === this.className.indexOf( 'toggled' ) ) {
+				
+					// collaps that expanded menu by removing the toggled class
+					children[i].className = children[i].className.replace( ' toggled', '' );
+				} 
+			}
+			
+			// check to see if the item that was clicked on has an existing class of toggled
 			if ( -1 === this.className.indexOf( 'toggled' ) ) {
+				// if no, add it
 				this.className += ' toggled';
 			} else {
-				this.className = this.className.replace( ' toggled', '');
+				// otherwise remove it
+				this.className = this.className.replace( ' toggled', '' );
 			}
+			
 		};
 	}
 
