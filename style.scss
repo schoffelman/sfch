@@ -51,6 +51,7 @@ $mn-active: #000000;
 $mn-hover: #ec1c24;
 $mnbg-active: #e8e1e1;
 $mnsub-border: #beb5b5;
+$mnsub-bgcolor: #dcd4d4;
 
 
 
@@ -640,15 +641,6 @@ a:active {
 	display: block;
 }
 
-@media screen and (min-width: 45.625em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
-
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
@@ -944,7 +936,7 @@ body {
 
 .site {
 	position: relative;
-	#overlay {
+	#overlay, #overlay-border {
 		display: none;
 	}
 }
@@ -971,7 +963,7 @@ body {
 	.site-utility {
 		height: 50px;
 		float: right;
-		margin-right: 4em;
+		margin-right: 2em;
 		padding-top: 14px;
 	}
 	.site-utility,
@@ -1000,7 +992,7 @@ body {
 		float: left;
 		height: 120px;
 		.site-title {
-			margin: .5em 0 0 2em;
+			margin: .5em 0 0 0;
 			float: left;
 		}
 	}
@@ -1013,9 +1005,6 @@ body {
 		a:hover {
 			background: $mnbg-active;
 			color: $mn-hover;
-		}
-		.nav-menu {
-			margin-right: 2em;
 		}
 		.nav-menu li {
 			a {
@@ -1050,11 +1039,6 @@ body {
 				}
 			}
 		}
-		/*
-		.nav-menu li:last-child .sub-menu {
-			right:0;
-		}
-		*/
 		.current-menu-item {
 			a {
 				color: $mn-active;
@@ -1067,6 +1051,7 @@ body {
 			color: $mn-hover;
 		}
 	}
+	
 }
 
 .site-content {
@@ -1088,7 +1073,17 @@ body {
 }
 
 
-@media screen and (max-width: 55.625em) and (min-width: 45.6em) {
+@media screen and (min-width: 48em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+
+@media screen and (max-width: 60em) and (min-width: 48em) {
 	
 	.site-header {
 		// Desktop Main Nav
@@ -1112,11 +1107,10 @@ body {
 	}
 }
 
-@media screen and (max-width: 45.6em) {
+@media screen and (max-width: 48em) {
 	.site.toggled {
 		#overlay {
 			background: #000;
-			//border-right: 195px solid $body-bgcolor;
 			display: block;
 			height: 100%;
 			left: 0;
@@ -1126,8 +1120,19 @@ body {
 			width: 100%;
 			z-index: 12;
 		}
+		#overlay-border {
+			background: $body-bgcolor;
+			display: block;
+			height: 100%;
+			position: fixed;
+			right: 0;
+			top: 0;;
+			width: 245px;
+			z-index: 12;
+		}
 	}
 	.site-header {
+		position: absolute;
 		.site-title img {
 			height: 50px;
 			width: 90px;
@@ -1166,33 +1171,46 @@ body {
 				li:first-child {
 					border-top: 1px solid $mnsub-border;
 				}
-				li.menu-item-has-children {
-					background: $body-bgcolor url("images/mobile-nav-plus.png") no-repeat 93% 50%;
-					a {
-						padding: 10px 90px 10px 15px;
-					}
-				}
 				li {
+					background: $body-bgcolor;
 					border-bottom: 1px solid $mnsub-border;
 					a {
 						margin-right: 50px;
 						padding: 10px 40px 10px 15px;
 					}
 				}
-				li.menu-item-has-children:hover {
+				li.menu-item-has-children {
 					background: $body-bgcolor url("images/mobile-nav-plus.png") no-repeat 93% 50%;
 					cursor: pointer;
-				}
-				li:hover {
+					a {
+						padding: 10px 90px 10px 15px;
+					}
 					a:hover {
 						background: $body-bgcolor;
 					}
-					ul {
+					ul.sub-menu {
 						display: none;
 					}
 				}
-				li.current-menu-item {
-					//background: $mnbg-active url("images/mobile-nav-minus.png") no-repeat 90% 50%;
+				li.menu-item-has-children.toggled {
+					background: $mnsub-bgcolor url("images/mobile-nav-minus.png") no-repeat 93% 50%;
+					a {
+						background: $body-bgcolor; 
+					}
+					ul.sub-menu {
+						display: block;
+						left: auto;
+						position: relative;
+						li {
+							border-top: 0px;
+							box-sizing: initial;
+							a {
+								background: $mnsub-bgcolor;
+								color: $mn-hover;
+								padding:10px 30px 10px 15px;
+							}
+						}
+					}
 				}
 			}
 		}
