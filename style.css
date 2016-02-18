@@ -774,7 +774,6 @@ body {
   .site #overlay, .site #overlay-border {
     display: none; }
 
-.site-header,
 .site-content,
 .site-footer {
   margin: 0 auto;
@@ -782,9 +781,11 @@ body {
 
 .site-header {
   background: #f5eeee url("images/header-background.png") repeat-x 0 0;
+  margin: 0 auto;
   position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 10; }
+  z-index: 100000; }
   .site-header .site-header-content {
     max-width: 60.75em;
     margin: 0 auto; }
@@ -858,9 +859,17 @@ body {
 
 .site-content {
   position: relative;
-  top: 10.625em; }
+  margin-top: 8.5em; }
+  .site-content .content-area .site-main .page .entry-header {
+    background: #635a5a;
+    padding: 55px 0;
+    text-align: center; }
+    .site-content .content-area .site-main .page .entry-header .entry-title {
+      color: #f6d03a;
+      max-width: 62.5em; }
 
 .site-footer {
+  clear: both;
   height: 146px;
   max-width: 1045px;
   padding-top: 35px; }

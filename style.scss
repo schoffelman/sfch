@@ -52,6 +52,8 @@ $mn-hover: #ec1c24;
 $mnbg-active: #e8e1e1;
 $mnsub-border: #beb5b5;
 $mnsub-bgcolor: #dcd4d4;
+$page-title-color: #f6d03a;
+$page-title-bgcolor: #635a5a;
 
 
 
@@ -941,7 +943,6 @@ body {
 	}
 }
 
-.site-header,
 .site-content,
 .site-footer {
 	margin: 0 auto;
@@ -950,9 +951,11 @@ body {
 
 .site-header {
 	background: $body-bgcolor url("images/header-background.png") repeat-x 0 0;
+	margin: 0 auto;
 	position: fixed;
+	top: 0;
 	width: 100%;
-	z-index: 10;
+	z-index: 100000;
 	.site-header-content {
 		max-width: 60.75em;
 		margin: 0 auto;
@@ -1056,10 +1059,26 @@ body {
 
 .site-content {
 	position: relative;
-	top: 10.625em;
+	margin-top: 8.5em;
+	.content-area {
+		.site-main {
+			.page {
+				.entry-header {
+					background: $page-title-bgcolor;
+					padding: 55px 0;
+					text-align: center;
+					.entry-title {
+						color: $page-title-color;
+						max-width: 62.5em;
+					}
+				}
+			}
+		}
+	}
 }
 
 .site-footer {
+	clear: both;
 	height: 146px;
 	max-width: 1045px;
 	padding-top: 35px;
