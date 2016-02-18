@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * The template for displaying the home page.
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -17,11 +17,13 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php
+		<?php if ( have_posts() ) : ?>
 		
-		get_sidebar();
+				<header>
+					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
+				</header>
 
-		if ( have_posts() ) :
+			<?php
 
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
@@ -47,4 +49,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
+get_sidebar();
 get_footer();

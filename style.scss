@@ -46,10 +46,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 $yellow: #f6d03a;
 $body-bgcolor: #f5eeee;
-$mn-inactive: #776c6c;
-$mn-active: #000000;
-$mn-hover: #ec1c24;
-$mnbg-active: #e8e1e1;
+$mn-light-gray: #776c6c;
+$mn-black: #000000;
+$mn-red: #ec1c24;
+$mn-white: #e8e1e1;
 $mnsub-border: #beb5b5;
 $mnsub-bgcolor: #dcd4d4;
 $page-title-color: #f6d03a;
@@ -957,7 +957,7 @@ body {
 	width: 100%;
 	z-index: 100000;
 	.site-header-content {
-		max-width: 60.75em;
+		max-width: 60em;
 		margin: 0 auto;
 	}
 }
@@ -1003,11 +1003,11 @@ body {
 	// Desktop Main Nav
 	.main-navigation {
 		a, a:visited {
-			color: $mn-inactive;
+			color: $mn-light-gray;
 		}
 		a:hover {
-			background: $mnbg-active;
-			color: $mn-hover;
+			background: $mn-white;
+			color: $mn-red;
 		}
 		.nav-menu li {
 			a {
@@ -1027,31 +1027,31 @@ body {
 			}
 		}
 		.nav-menu li:hover {
-			background: $mnbg-active;
+			background: $mn-white;
 			a {
-				color: $mn-hover;
+				color: $mn-red;
 			}
 			.sub-menu {
-				background: $mnbg-active;
+				background: $mn-white;
 				a {
-					color: $mn-inactive;
+					color: $mn-light-gray;
 				}
 				a:hover {
-					background: $mn-hover;
+					background: $mn-red;
 					color: $body-bgcolor;
 				}
 			}
 		}
 		.current-menu-item {
 			a {
-				color: $mn-active;
+				color: $mn-black;
 			}
 			.sub-menu a {
-				color: $mn-inactive;
+				color: $mn-light-gray;
 			}
 		}
 		.current-menu-item a:hover {
-			color: $mn-hover;
+			color: $mn-red;
 		}
 	}
 	
@@ -1060,19 +1060,56 @@ body {
 .site-content {
 	position: relative;
 	margin-top: 8.5em;
+	.page-header {
+		background: $page-title-bgcolor;
+		padding: 55px 0;
+		text-align: center;
+		.page-title {
+			color: $page-title-color;
+			max-width: 62.5em;
+		}
+	}
 	.content-area {
-		.site-main {
-			.page {
-				.entry-header {
-					background: $page-title-bgcolor;
-					padding: 55px 0;
-					text-align: center;
-					.entry-title {
-						color: $page-title-color;
-						max-width: 62.5em;
+		margin: 0 auto;
+		max-width: 60em;
+		aside.widget-area {
+			float: left;
+			width: 20em;
+			ul.child-sidebar-menu {
+				border-bottom: 1px solid $mnsub-border;
+				list-style: none;
+				margin: 2.5em 3em 0 0;
+				padding: 0;
+				li {
+					border-top: 1px solid $mnsub-border;
+					a {
+						background: $mn-white;
+						color: $mn-light-gray;
+						display: block;
+						padding: 1.2em 2em;
+						text-decoration: none;
+					}
+					a:hover {
+						background: $mn-red;
+						color: $mn-white;
+					}
+				}
+				li.current_page_item {
+					a {
+						background: $mnsub-bgcolor;
+						color: $mn-black;
+					}
+					a:hover {
+						background: $mn-red;
+						color: $mn-white;
 					}
 				}
 			}
+		}
+		main.site-main {
+			float: left;
+			margin-right: 2em;
+			max-width: 38em;
 		}
 	}
 }
@@ -1225,7 +1262,7 @@ body {
 							box-sizing: initial;
 							a {
 								background: $mnsub-bgcolor;
-								color: $mn-hover;
+								color: $mn-red;
 								padding:10px 30px 10px 15px;
 							}
 						}

@@ -787,7 +787,7 @@ body {
   width: 100%;
   z-index: 100000; }
   .site-header .site-header-content {
-    max-width: 60.75em;
+    max-width: 60em;
     margin: 0 auto; }
 
 .site-header .site-utility {
@@ -860,13 +860,45 @@ body {
 .site-content {
   position: relative;
   margin-top: 8.5em; }
-  .site-content .content-area .site-main .page .entry-header {
+  .site-content .page-header {
     background: #635a5a;
     padding: 55px 0;
     text-align: center; }
-    .site-content .content-area .site-main .page .entry-header .entry-title {
+    .site-content .page-header .page-title {
       color: #f6d03a;
       max-width: 62.5em; }
+  .site-content .content-area {
+    margin: 0 auto;
+    max-width: 60em; }
+    .site-content .content-area aside.widget-area {
+      float: left;
+      width: 20em; }
+      .site-content .content-area aside.widget-area ul.child-sidebar-menu {
+        border-bottom: 1px solid #beb5b5;
+        list-style: none;
+        margin: 2.5em 3em 0 0;
+        padding: 0; }
+        .site-content .content-area aside.widget-area ul.child-sidebar-menu li {
+          border-top: 1px solid #beb5b5; }
+          .site-content .content-area aside.widget-area ul.child-sidebar-menu li a {
+            background: #e8e1e1;
+            color: #776c6c;
+            display: block;
+            padding: 1.2em 2em;
+            text-decoration: none; }
+          .site-content .content-area aside.widget-area ul.child-sidebar-menu li a:hover {
+            background: #ec1c24;
+            color: #e8e1e1; }
+        .site-content .content-area aside.widget-area ul.child-sidebar-menu li.current_page_item a {
+          background: #dcd4d4;
+          color: #000000; }
+        .site-content .content-area aside.widget-area ul.child-sidebar-menu li.current_page_item a:hover {
+          background: #ec1c24;
+          color: #e8e1e1; }
+    .site-content .content-area main.site-main {
+      float: left;
+      margin-right: 2em;
+      max-width: 38em; }
 
 .site-footer {
   clear: both;

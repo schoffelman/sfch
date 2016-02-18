@@ -12,12 +12,24 @@
  * @package sfch
  */
 
-get_header(); ?>
+get_header(); 
+
+while ( have_posts() ) : the_post(); ?>
+		
+	<header class="page-header">
+		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+
+<?php endwhile; // End of the loop. ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
 
-			<?php
+		<?php get_sidebar(); ?>
+			
+		<main id="main" class="site-main" role="main">
+		
+		<?php
+
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'page' );
@@ -34,5 +46,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
