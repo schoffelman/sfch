@@ -1124,7 +1124,36 @@ body {
 		display: inline-block;
 		float: left;
 		height: 80px;
-		pading-top: 20px;
+		padding: 20px 30px 0;
+	}
+	span.social {
+		padding-right: 15px;
+	}
+	span.find-us {
+		padding-left: 0;
+		padding-top: 30px;
+	}
+	span.name {
+		border: none;
+		padding-top: 30px;
+		padding-right: 20px;
+	}
+	span.logo {
+		border: none;
+		padding-right: 0;
+		padding-left: 10px;
+		a {
+			padding-right: 0;
+		}
+	}
+	a {
+		display: block;
+		float: left;
+		padding-top: 10px;
+	}
+	a.img {
+		padding-top: 0;
+		padding-right: 15px;
 	}
 }
 
