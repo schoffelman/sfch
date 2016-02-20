@@ -23,8 +23,6 @@ while ( have_posts() ) : the_post(); ?>
 <?php endwhile; // End of the loop. ?>
 
 	<div id="primary" class="content-area">
-
-		<?php get_sidebar(); ?>
 			
 		<main id="main" class="site-main" role="main">
 		
@@ -43,6 +41,9 @@ while ( have_posts() ) : the_post(); ?>
 			?>
 
 		</main><!-- #main -->
+		
+		<?php get_sidebar(); ?>
+		
 	</div><!-- #primary -->
 
 <?php

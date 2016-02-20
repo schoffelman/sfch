@@ -1072,13 +1072,19 @@ body {
 	.content-area {
 		margin: 0 auto;
 		max-width: 60em;
+		main.site-main {
+			float: right;
+			margin-right: 2%;
+			width: 65%;
+		}
 		aside.widget-area {
 			float: left;
-			width: 20em;
+			margin-right: 2%;
+			width: 29%;
 			ul.child-sidebar-menu {
 				border-bottom: 1px solid $mnsub-border;
 				list-style: none;
-				margin: 2.5em 3em 0 0;
+				margin: 2.5em 0 0 0;
 				padding: 0;
 				li {
 					border-top: 1px solid $mnsub-border;
@@ -1106,11 +1112,6 @@ body {
 				}
 			}
 		}
-		main.site-main {
-			float: left;
-			margin-right: 2em;
-			max-width: 38em;
-		}
 	}
 }
 
@@ -1130,7 +1131,7 @@ body {
 		padding-right: 15px;
 	}
 	span.find-us {
-		padding-left: 0;
+		padding-left: 25px;
 		padding-top: 30px;
 	}
 	span.name {
@@ -1141,7 +1142,7 @@ body {
 	span.logo {
 		border: none;
 		padding-right: 0;
-		padding-left: 10px;
+		padding-left: 20px;
 		a {
 			padding-right: 0;
 		}
