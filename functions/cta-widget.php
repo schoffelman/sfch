@@ -85,7 +85,7 @@ function cta_banner_ad_widget_display($args=array(), $params=array()) {
 
 	echo '<div class="textwidget">'.stripslashes(nl2br($description));
 
-	echo '<dive class="widgetcta"><a href="'.stripslashes($cta_url).'" target="_blank">'.stripslashes($cta_title).'</a></div>';
+	echo '<div class="widgetcta"><a href="'.stripslashes($cta_url).'" target="_blank">'.stripslashes($cta_title).'</a></div>';
 
 	echo '</div>';//close div.textwidget
   echo stripslashes($args['after_widget']);
