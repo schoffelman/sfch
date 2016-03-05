@@ -33,4 +33,7 @@ if ( has_post_thumbnail() ) {
 	<footer class="entry-footer">
 		<?php get_sidebar('single-page'); ?>
 	</footer><!-- .entry-footer -->
+	
+	<div class="clear"></div>
+	
 </article><!-- #post-## -->
