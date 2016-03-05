@@ -15,7 +15,9 @@
 		<?php
 		
 			if ( has_post_thumbnail() ) {
-			    the_post_thumbnail();
+				echo '<div class="featured-image">';
+			    	the_post_thumbnail();
+			    echo '</div>';
 			}
 				
 			the_content();
