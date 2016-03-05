@@ -1234,12 +1234,27 @@ body {
 				width: 100%;
 				.entry-content {
 					float: left;
-					width: 75%;
+					width: 70%;
 				}
 				.entry-footer {
-					float: left;
+					float: right;
+					padding: 0;
 					width: 25%;
+					aside.widget-area {
+						display: block;
+						padding: 1.25em 1em 0;
+						width: 100%;
+						.widget-title {
+							font-size: 2em;
+							color: $mn-black;
+							white-space: nowrap;
+						}
+						.widgetcta {
+							width: 65%;
+						}
+					}
 				}
+				
 			}
 			
 			aside.widget-area {

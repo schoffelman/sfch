@@ -116,13 +116,32 @@ function sfch_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar Parent Page', 'sfch' ),
+		'id'            => 'parent-page',
+		'description'   => '',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'sfch_widgets_init' );
 
-if ( file_exists( TEMPLATEPATH . '/functions/cta-widget.php') ) {
-    load_template( TEMPLATEPATH . '/functions/cta-widget.php');
+
+// Single Page CTA Widget
+if ( file_exists( TEMPLATEPATH . '/functions/single-page-cta-widget.php') ) {
+    load_template( TEMPLATEPATH . '/functions/single-page-cta-widget.php');
 } else {
-   load_template( ABSPATH . 'wp-content/themes/sfch/functions/cta-widget.php');
+   load_template( ABSPATH . 'wp-content/themes/sfch/functions/single-page-cta-widget.php');
+}
+
+
+// Parent Page CTA Widget
+if ( file_exists( TEMPLATEPATH . '/functions/parent-page-cta-widget.php') ) {
+    load_template( TEMPLATEPATH . '/functions/parent-page-cta-widget.php');
+} else {
+   load_template( ABSPATH . 'wp-content/themes/sfch/functions/parent-page-cta-widget.php');
 }
 
 

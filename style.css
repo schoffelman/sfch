@@ -989,10 +989,21 @@ body {
   width: 100%; }
   .page-parent .site-content .content-area .site-main .entry-content {
     float: left;
-    width: 75%; }
+    width: 70%; }
   .page-parent .site-content .content-area .site-main .entry-footer {
-    float: left;
+    float: right;
+    padding: 0;
     width: 25%; }
+    .page-parent .site-content .content-area .site-main .entry-footer aside.widget-area {
+      display: block;
+      padding: 1.25em 1em 0;
+      width: 100%; }
+      .page-parent .site-content .content-area .site-main .entry-footer aside.widget-area .widget-title {
+        font-size: 2em;
+        color: #000000;
+        white-space: nowrap; }
+      .page-parent .site-content .content-area .site-main .entry-footer aside.widget-area .widgetcta {
+        width: 65%; }
 .page-parent .site-content .content-area aside.widget-area {
   display: none;
   float: none;

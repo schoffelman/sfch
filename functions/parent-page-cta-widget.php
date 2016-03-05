@@ -1,7 +1,7 @@
 <?php
 
-function get_cta_banner_ad_widget() {
-    do_action( 'get_cta_banner_ad_widget' );
+function get_parent_page_cta_widget() {
+    do_action( 'get_parent_page_cta_widget' );
     if ( file_exists( TEMPLATEPATH . '/inc/cta-widget.php') ) {
         load_template( TEMPLATEPATH . '/inc/cta-widget.php');
     } else {
@@ -9,42 +9,42 @@ function get_cta_banner_ad_widget() {
     }
 }
 
-function cta_banner_ad_widget() {
-    get_cta_banner_ad_widget();
+function parent_page_cta_widget() {
+    get_parent_page_cta_widget();
     return;
 }
 
 
 wp_register_sidebar_widget( 
-	'cta_banner_ad_widget', 
-	'Call To Action Banner', 
-	'cta_banner_ad_widget_display', 
+	'parent_page_cta_widget', 
+	'Parent Page Call To Action Widget', 
+	'parent_page_cta_widget_display', 
 	array(
-		'classname' => 'cta_banner_ad_widget', 
+		'classname' => 'parent_page_cta_widget', 
 		'description' => 'A banner for the "Get Started" section.'
 	)
 );
 
 wp_register_widget_control(
-	'cta_banner_ad_widget',		// id
-	'cta_banner_ad_widget',		// name
-	'cta_banner_ad_widget_control'	// callback function
+	'parent_page_cta_widget',		// id
+	'parent_page_cta_widget',		// name
+	'parent_page_cta_widget_control'	// callback function
 );
 
-function cta_banner_ad_widget_control ($args=array(), $params=array()) {
+function parent_page_cta_widget_control ($args=array(), $params=array()) {
 	//the form is submitted, save into database
 	if (isset($_POST['submitted'])) {
-		update_option('cta_banner_ad_widget_title', $_POST['widgettitle']);
-		update_option('cta_banner_ad_widget_cta_url', $_POST['cta_url']);
-		update_option('cta_banner_ad_widget_cta_title', $_POST['cta_title']);
-		update_option('cta_banner_ad_widget_description', $_POST['description']);
+		update_option('parent_page_cta_widget_title', $_POST['widgettitle']);
+		update_option('parent_page_cta_widget_cta_url', $_POST['cta_url']);
+		update_option('parent_page_cta_widget_cta_title', $_POST['cta_title']);
+		update_option('parent_page_cta_widget_description', $_POST['description']);
 	}
 
 	//load options
-	$widgettitle = get_option('cta_banner_ad_widget_title');
-	$cta_url = get_option('cta_banner_ad_widget_cta_url');
-	$cta_title = get_option('cta_banner_ad_widget_cta_title');
-	$description = get_option('cta_banner_ad_widget_description');
+	$widgettitle = get_option('parent_page_cta_widget_title');
+	$cta_url = get_option('parent_page_cta_widget_cta_url');
+	$cta_title = get_option('parent_page_cta_widget_cta_title');
+	$description = get_option('parent_page_cta_widget_description');
 	?>
 
 	<br /><br />Title:<br />
@@ -69,12 +69,12 @@ function cta_banner_ad_widget_control ($args=array(), $params=array()) {
 
 
 
-function cta_banner_ad_widget_display($args=array(), $params=array()) {
+function parent_page_cta_widget_display($args=array(), $params=array()) {
 	//load options
-	$title = get_option('cta_banner_ad_widget_title');
-	$cta_url = get_option('cta_banner_ad_widget_cta_url');
-	$cta_title = get_option('cta_banner_ad_widget_cta_title');
-	$description = get_option('cta_banner_ad_widget_description');
+	$title = get_option('parent_page_cta_widget_title');
+	$cta_url = get_option('parent_page_cta_widget_cta_url');
+	$cta_title = get_option('parent_page_cta_widget_cta_title');
+	$description = get_option('parent_page_cta_widget_description');
 
 	//widget output
 	echo stripslashes($args['before_widget']);
