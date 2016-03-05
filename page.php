@@ -42,11 +42,26 @@ while ( have_posts() ) : the_post(); ?>
 				}
 
 			endwhile; // End of the loop.
+			
 			?>
+			
+			
 
 		</main><!-- #main -->
 		
-		<?php get_sidebar(); ?>
+		<?php 
+		
+		if ( is_page() && $post->post_parent ) {
+			
+			get_sidebar(); 
+		
+		} else {
+		
+			get_template_part( 'template-parts/content', 'child-page-list' );
+			
+		}
+		
+		?>
 		
 	</div><!-- #primary -->
 
