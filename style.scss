@@ -42,23 +42,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+# Colors
 # Structure
 --------------------------------------------------------------*/
-$yellow: #f6d03a;
-$body-bgcolor: #f5eeee;
-$body-bd-light-gray: #c4bebe;
-$mn-light-gray: #776c6c;
-$mn-black: #000000;
-$mn-red: #ec1c24;
-$mn-white: #e8e1e1;
-$mnsub-border: #beb5b5;
-$mnsub-bgcolor: #dcd4d4;
-$page-title-color: #f6d03a;
-$page-title-bgcolor: #635a5a;
-$page-bg-yellow: #f5e5b8;
-$page-btn-blue: #214da0;
-
-
 
 
 /*--------------------------------------------------------------
@@ -930,6 +916,25 @@ object {
 
 
 
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+
+$yellow: #f6d03a;
+$body-bgcolor: #f5eeee;
+$body-bd-light-gray: #c4bebe;
+$mn-light-gray: #776c6c;
+$mn-black: #000000;
+$mn-red: #ec1c24;
+$mn-white: #e8e1e1;
+$mnsub-border: #beb5b5;
+$mnsub-bgcolor: #dcd4d4;
+$page-title-color: #f6d03a;
+$page-title-bgcolor: #635a5a;
+$page-bg-yellow: #f5e5b8;
+$page-btn-blue: #214da0;
+
+
 
 /*--------------------------------------------------------------
 # Structure
@@ -1214,6 +1219,11 @@ body {
 			.site-main {
 				float: none;
 				width: 100%;
+				.featured-image {
+					img {
+						border-bottom: 3px solid $body-bd-light-gray;
+					}
+				}
 			}
 			
 			aside.widget-area {
