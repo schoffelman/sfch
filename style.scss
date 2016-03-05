@@ -1050,8 +1050,10 @@ body {
 				}
 			}
 		}
+		.current-menu-ancestor,
 		.current-menu-item {
 			a {
+				background: $mn-white;
 				color: $mn-black;
 			}
 			.sub-menu a {

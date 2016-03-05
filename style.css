@@ -854,8 +854,11 @@ body {
     .site-header .main-navigation .nav-menu li:hover .sub-menu a:hover {
       background: #ec1c24;
       color: #f5eeee; }
+.site-header .main-navigation .current-menu-ancestor a,
 .site-header .main-navigation .current-menu-item a {
+  background: #e8e1e1;
   color: #000000; }
+.site-header .main-navigation .current-menu-ancestor .sub-menu a,
 .site-header .main-navigation .current-menu-item .sub-menu a {
   color: #776c6c; }
 .site-header .main-navigation .current-menu-item a:hover {
