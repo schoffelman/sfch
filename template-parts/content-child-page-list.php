@@ -46,6 +46,8 @@ if ( $child_pages->have_posts() ) : ?>
 		
 	wp_reset_postdata(); ?>
 	
+	<div class="clear"></div>
+	
 </div>
 	
 <?php endif; ?>
