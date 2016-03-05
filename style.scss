@@ -1076,7 +1076,9 @@ body {
 		text-align: center;
 		.page-title {
 			color: $page-title-color;
+			font-weight: 100;
 			max-width: 62.5em;
+			text-transform: uppercase;
 		}
 	}
 	.content-area {

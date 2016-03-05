@@ -873,7 +873,9 @@ body {
     text-align: center; }
     .site-content .page-header .page-title {
       color: #f6d03a;
-      max-width: 62.5em; }
+      font-weight: 100;
+      max-width: 62.5em;
+      text-transform: uppercase; }
   .site-content .content-area {
     margin: 0 auto;
     max-width: 60em; }
