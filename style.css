@@ -992,6 +992,7 @@ body {
     width: 70%; }
   .page-parent .site-content .content-area .site-main .entry-footer {
     float: right;
+    margin-right: 2%;
     padding: 0;
     width: 25%; }
     .page-parent .site-content .content-area .site-main .entry-footer aside.widget-area {
