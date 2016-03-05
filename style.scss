@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# Colors
 # Normalize
 # Typography
 # Elements
@@ -42,9 +43,32 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
-# Colors
 # Structure
 --------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+
+$yellow: #f6d03a;
+$body-bgcolor: #f5eeee;
+$body-bd-light-gray: #c4bebe;
+$mn-light-gray: #776c6c;
+$mn-black: #000000;
+$mn-red: #ec1c24;
+$mn-white: #e8e1e1;
+$mnsub-border: #beb5b5;
+$mnsub-bgcolor: #dcd4d4;
+$page-title-color: #f6d03a;
+$page-title-bgcolor: #635a5a;
+$page-bg-yellow: #f5e5b8;
+$page-btn-blue: #214da0;
+
+
+
 
 
 /*--------------------------------------------------------------
@@ -915,27 +939,6 @@ object {
 
 
 
-
-/*--------------------------------------------------------------
-# Colors
---------------------------------------------------------------*/
-
-$yellow: #f6d03a;
-$body-bgcolor: #f5eeee;
-$body-bd-light-gray: #c4bebe;
-$mn-light-gray: #776c6c;
-$mn-black: #000000;
-$mn-red: #ec1c24;
-$mn-white: #e8e1e1;
-$mnsub-border: #beb5b5;
-$mnsub-bgcolor: #dcd4d4;
-$page-title-color: #f6d03a;
-$page-title-bgcolor: #635a5a;
-$page-bg-yellow: #f5e5b8;
-$page-btn-blue: #214da0;
-
-
-
 /*--------------------------------------------------------------
 # Structure
 --------------------------------------------------------------*/
@@ -1087,12 +1090,18 @@ body {
 		}
 	}
 	.content-area {
-		margin: 0 auto;
+		margin: 60px auto;
 		max-width: 60em;
 		main.site-main {
 			float: right;
 			margin-right: 2%;
 			width: 65%;
+			.entry-content {
+				margin: 0;
+				p {
+					margin-top: 0;
+				}
+			}
 		}
 		aside.widget-area {
 			float: left;
@@ -1101,7 +1110,6 @@ body {
 			ul.child-sidebar-menu {
 				border-bottom: 1px solid $mnsub-border;
 				list-style: none;
-				margin: 2.5em 0 0 0;
 				padding: 0;
 				li {
 					border-top: 1px solid $mnsub-border;
@@ -1215,15 +1223,16 @@ body {
 // styling for page parents
 .page-parent {
 	.site-content {
-		.content-area {
+		.content-area {	
+			.featured-image {
+				img {
+					border-bottom: 3px solid $body-bd-light-gray;
+				}
+			}
+			
 			.site-main {
 				float: none;
 				width: 100%;
-				.featured-image {
-					img {
-						border-bottom: 3px solid $body-bd-light-gray;
-					}
-				}
 			}
 			
 			aside.widget-area {
@@ -1236,6 +1245,7 @@ body {
 		}
 	}
 }
+
 
 @media screen and (min-width: 48em) {
 	.menu-toggle {
