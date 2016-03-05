@@ -1005,6 +1005,35 @@ body {
         white-space: nowrap; }
       .page-parent .site-content .content-area .site-main .entry-footer aside.widget-area .widgetcta {
         width: 65%; }
+.page-parent .site-content .content-area .child-content-listing .child-entry {
+  border-top: 3px solid #c4bebe;
+  cursor: hand;
+  cursor: pointer;
+  float: left;
+  margin: 0 3% 0 0;
+  padding: 2em 1em;
+  width: 30%; }
+  .page-parent .site-content .content-area .child-content-listing .child-entry h3 {
+    color: #000000;
+    font-size: 1.75em;
+    font-weight: 100;
+    line-height: 1em;
+    margin: 0; }
+  .page-parent .site-content .content-area .child-content-listing .child-entry .more-link {
+    display: block;
+    margin-top: 1em;
+    text-decoration: none; }
+    .page-parent .site-content .content-area .child-content-listing .child-entry .more-link span {
+      float: left; }
+    .page-parent .site-content .content-area .child-content-listing .child-entry .more-link img {
+      float: left;
+      margin: 5px 0 0 5px; }
+.page-parent .site-content .content-area .child-content-listing .child-entry:hover {
+  background: #e8e1e1; }
+  .page-parent .site-content .content-area .child-content-listing .child-entry:hover h3 {
+    color: #ec1c24; }
+  .page-parent .site-content .content-area .child-content-listing .child-entry:hover a.more-link {
+    color: #ec1c24; }
 .page-parent .site-content .content-area aside.widget-area {
   display: none;
   float: none;

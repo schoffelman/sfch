@@ -1255,7 +1255,45 @@ body {
 						}
 					}
 				}
-				
+			}
+			.child-content-listing {
+				.child-entry {
+					border-top: 3px solid $body-bd-light-gray;
+					cursor: hand;
+					cursor: pointer;
+					float: left;
+					margin: 0 3% 0 0;
+					padding: 2em 1em;
+					width: 30%;
+					h3 {
+						color: $mn-black;
+						font-size: 1.75em;
+						font-weight: 100;
+						line-height: 1em;
+						margin: 0;
+					}
+					.more-link {
+						display: block;
+						margin-top: 1em;
+						text-decoration: none;
+						span {
+							float: left;
+						}
+						img {
+							float: left;
+							margin: 5px 0 0 5px;
+						}
+					}
+				}
+				.child-entry:hover {
+					background: $mn-white;
+					h3 {
+						color: $mn-red;
+					}
+					a.more-link {
+						color: $mn-red;	
+					}
+				}
 			}
 			
 			aside.widget-area {
