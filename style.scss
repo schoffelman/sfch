@@ -1069,7 +1069,7 @@ body {
 
 .site-content {
 	position: relative;
-	margin-top: 8.5em;
+	margin-top: 7.6em;
 	.page-header {
 		background: $page-title-bgcolor;
 		padding: 55px 0;
@@ -1207,6 +1207,25 @@ body {
 	}
 }
 
+// styling for page parents
+.page-parent {
+	.site-content {
+		.content-area {
+			.site-main {
+				float: none;
+				width: 100%;
+			}
+			
+			aside.widget-area {
+				display: none;
+				float: none;
+				margin: 0;
+				padding: 0;
+				width: 0;
+			}
+		}
+	}
+}
 
 @media screen and (min-width: 48em) {
 	.menu-toggle {

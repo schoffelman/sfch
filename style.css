@@ -866,7 +866,7 @@ body {
 
 .site-content {
   position: relative;
-  margin-top: 8.5em; }
+  margin-top: 7.6em; }
   .site-content .page-header {
     background: #635a5a;
     padding: 55px 0;
@@ -974,6 +974,16 @@ body {
   .site-footer a.img {
     padding-top: 0;
     padding-right: 15px; }
+
+.page-parent .site-content .content-area .site-main {
+  float: none;
+  width: 100%; }
+.page-parent .site-content .content-area aside.widget-area {
+  display: none;
+  float: none;
+  margin: 0;
+  padding: 0;
+  width: 0; }
 
 @media screen and (min-width: 48em) {
   .menu-toggle {
