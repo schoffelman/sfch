@@ -1229,10 +1229,17 @@ body {
 					border-bottom: 3px solid $body-bd-light-gray;
 				}
 			}
-			
 			.site-main {
 				float: none;
 				width: 100%;
+				.entry-content {
+					float: left;
+					width: 75%;
+				}
+				.entry-footer {
+					float: left;
+					width: 25%;
+				}
 			}
 			
 			aside.widget-area {

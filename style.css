@@ -987,6 +987,12 @@ body {
 .page-parent .site-content .content-area .site-main {
   float: none;
   width: 100%; }
+  .page-parent .site-content .content-area .site-main .entry-content {
+    float: left;
+    width: 75%; }
+  .page-parent .site-content .content-area .site-main .entry-footer {
+    float: left;
+    width: 25%; }
 .page-parent .site-content .content-area aside.widget-area {
   display: none;
   float: none;
