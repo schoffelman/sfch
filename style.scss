@@ -996,10 +996,15 @@ body {
 	.site-branding {
 		clear: both;
 		float: left;
-		height: 120px;
 		.site-title {
-			margin: .5em 0 0 0;
+			margin: 0;
+			padding: 0;
+			position: relative;
 			float: left;
+			img {
+				margin: .25em 0 -.25em;
+				padding: 0;
+			}
 		}
 	}
 	

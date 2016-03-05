@@ -818,11 +818,15 @@ body {
     padding-left: 25px; }
 .site-header .site-branding {
   clear: both;
-  float: left;
-  height: 120px; }
+  float: left; }
   .site-header .site-branding .site-title {
-    margin: .5em 0 0 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
     float: left; }
+    .site-header .site-branding .site-title img {
+      margin: .25em 0 -.25em;
+      padding: 0; }
 .site-header .main-navigation a, .site-header .main-navigation a:visited {
   color: #776c6c; }
 .site-header .main-navigation a:hover {
