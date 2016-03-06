@@ -1106,6 +1106,27 @@ body {
 					margin-top: 2em;
 				}
 			}
+			.entry-testimonies {
+				border-bottom: 1px solid $body-bd-light-gray;
+				border-top: 1px solid $body-bd-light-gray;
+				margin: 2em 0;
+				padding: 2em;
+				.thumbnail {
+					float: left;
+					margin-right: 1em;
+				}
+				.testimony {
+					float: left;
+					font-size: .9em;
+					max-width: 75%;
+					p {
+						line-height: 1.25em;
+						margin: 0 0 1em 0;
+						padding: 0;
+						font-style: italic;
+					}
+				}
+			}
 		}
 		aside.widget-area {
 			float: left;
@@ -1146,7 +1167,7 @@ body {
 			background: $page-bg-yellow;
 			border-bottom: 3px solid $body-bd-light-gray;
 			margin-bottom: 150px;
-			margin-top: 30px;
+			margin-top: 50px;
 			padding: 30px 40px 20px;
 			position: relative;
 			aside.widget-area {
