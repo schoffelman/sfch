@@ -1235,6 +1235,10 @@ body {
 				.entry-content {
 					float: left;
 					width: 70%;
+					h1, h2, h3, h4, h5, h6 {
+						color: $mn-black;
+						font-weight: 100;
+					}
 				}
 				.entry-footer {
 					float: right;
@@ -1265,13 +1269,28 @@ body {
 					margin: 0 3% 0 0;
 					padding: 2em 1em;
 					width: 30%;
-					h3 {
+					img.size-post-thumbnail {
+						border-bottom: 3px solid $body-bd-light-gray;
+					}
+					h3,h4 {
 						color: $mn-black;
 						font-size: 1.75em;
 						font-weight: 100;
 						line-height: 1em;
 						margin: 0;
 					}
+					h4.child-title {
+						font-size: 1.5em;
+						margin: 1em 0 0;
+						padding-left: .5em;
+						span, img {
+							float: left;
+						}
+						img {
+							margin: .1em 0 0 .25em;
+						}
+					}
+					
 					.more-link {
 						display: block;
 						margin-top: 1em;
@@ -1287,7 +1306,7 @@ body {
 				}
 				.child-entry:hover {
 					background: $mn-white;
-					h3 {
+					h1,h2,h3,h4,h5,h6 {
 						color: $mn-red;
 					}
 					a.more-link {
