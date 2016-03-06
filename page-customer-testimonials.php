@@ -32,15 +32,9 @@ while ( have_posts() ) : the_post(); ?>
 		
 			while ( have_posts() ) : the_post();
 					
-				get_template_part( 'template-parts/content', get_post_format() );
+				get_template_part( 'template-parts/content', 'testimonies' );
 
 			endwhile; // End of the loop.
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
 			
@@ -48,19 +42,7 @@ while ( have_posts() ) : the_post(); ?>
 
 		</main><!-- #main -->
 		
-		<?php 
-		
-		if ( is_page() && $post->post_parent ) {
-			
-			get_sidebar(); 
-		
-		} else {
-		
-			get_template_part( 'template-parts/content', 'child-page-list' );
-			
-		}
-		
-		?>
+		<?php get_sidebar(); ?>
 		
 	</div><!-- #primary -->
 

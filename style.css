@@ -881,7 +881,7 @@ body {
       max-width: 62.5em;
       text-transform: uppercase; }
   .site-content .content-area {
-    margin: 60px auto;
+    margin: 2em auto;
     max-width: 60em; }
     .site-content .content-area main.site-main {
       float: right;
@@ -889,8 +889,11 @@ body {
       width: 65%; }
       .site-content .content-area main.site-main .entry-content {
         margin: 0; }
+        .site-content .content-area main.site-main .entry-content h1, .site-content .content-area main.site-main .entry-content h2, .site-content .content-area main.site-main .entry-content h3, .site-content .content-area main.site-main .entry-content h4, .site-content .content-area main.site-main .entry-content h5, .site-content .content-area main.site-main .entry-content h6 {
+          color: #000000;
+          font-weight: 100; }
         .site-content .content-area main.site-main .entry-content p {
-          margin-top: 0; }
+          margin-top: 2em; }
     .site-content .content-area aside.widget-area {
       float: left;
       margin-right: 2%;
@@ -898,6 +901,7 @@ body {
       .site-content .content-area aside.widget-area ul.child-sidebar-menu {
         border-bottom: 1px solid #beb5b5;
         list-style: none;
+        margin-top: 2em;
         padding: 0; }
         .site-content .content-area aside.widget-area ul.child-sidebar-menu li {
           border-top: 1px solid #beb5b5; }
@@ -987,12 +991,12 @@ body {
 .page-parent .site-content .content-area .site-main {
   float: none;
   width: 100%; }
+  .page-parent .site-content .content-area .site-main h1, .page-parent .site-content .content-area .site-main h2, .page-parent .site-content .content-area .site-main h3, .page-parent .site-content .content-area .site-main h4, .page-parent .site-content .content-area .site-main h5, .page-parent .site-content .content-area .site-main h6 {
+    color: #000000;
+    font-weight: 100; }
   .page-parent .site-content .content-area .site-main .entry-content {
     float: left;
     width: 70%; }
-    .page-parent .site-content .content-area .site-main .entry-content h1, .page-parent .site-content .content-area .site-main .entry-content h2, .page-parent .site-content .content-area .site-main .entry-content h3, .page-parent .site-content .content-area .site-main .entry-content h4, .page-parent .site-content .content-area .site-main .entry-content h5, .page-parent .site-content .content-area .site-main .entry-content h6 {
-      color: #000000;
-      font-weight: 100; }
   .page-parent .site-content .content-area .site-main .entry-footer {
     float: right;
     margin-right: 2%;

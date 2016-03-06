@@ -7,13 +7,6 @@
  * @package sfch
  */
 
-
-if ( has_post_thumbnail() ) {
-	echo '<div class="featured-image">';
-    	the_post_thumbnail();
-    echo '</div>';
-}
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -25,7 +18,9 @@ if ( has_post_thumbnail() ) {
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php get_sidebar('parent-page'); ?>
+	
+		<?php get_sidebar('single-page'); ?>
+		
 	</footer><!-- .entry-footer -->
 	
 	<div class="clear"></div>

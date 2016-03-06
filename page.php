@@ -45,7 +45,6 @@ while ( have_posts() ) : the_post(); ?>
 			
 			?>
 			
-			
 
 		</main><!-- #main -->
 		

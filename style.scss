@@ -1090,7 +1090,7 @@ body {
 		}
 	}
 	.content-area {
-		margin: 60px auto;
+		margin: 2em auto;
 		max-width: 60em;
 		main.site-main {
 			float: right;
@@ -1098,8 +1098,12 @@ body {
 			width: 65%;
 			.entry-content {
 				margin: 0;
+				h1, h2, h3, h4, h5, h6 {
+					color: $mn-black;
+					font-weight: 100;
+				}
 				p {
-					margin-top: 0;
+					margin-top: 2em;
 				}
 			}
 		}
@@ -1110,6 +1114,7 @@ body {
 			ul.child-sidebar-menu {
 				border-bottom: 1px solid $mnsub-border;
 				list-style: none;
+				margin-top: 2em;
 				padding: 0;
 				li {
 					border-top: 1px solid $mnsub-border;
@@ -1232,13 +1237,13 @@ body {
 			.site-main {
 				float: none;
 				width: 100%;
+				h1, h2, h3, h4, h5, h6 {
+					color: $mn-black;
+					font-weight: 100;
+				}
 				.entry-content {
 					float: left;
 					width: 70%;
-					h1, h2, h3, h4, h5, h6 {
-						color: $mn-black;
-						font-weight: 100;
-					}
 				}
 				.entry-footer {
 					float: right;
