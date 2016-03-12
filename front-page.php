@@ -19,69 +19,112 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		
 		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) :
 		
-			while ( have_posts() ) : the_post();
+			<div class="entry quote">
 			
-				the_content();
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/est-1995.png" alt="Est. 1995" />
 				
-			endwhile;
+					<article>
 
-		endif; ?>
+					<?php if ( have_posts() ) :
+					
+						while ( have_posts() ) : the_post();
+						
+							the_content();
+							
+						endwhile;
+			
+					endif; ?>
+				
+					</article>
+				
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/ampersand-logo.png" alt="" />
+				
+			</div><!-- .entry -->
 
 		</main><!-- #main -->
 	
-		<div class="get-started">
-			
-			<?php 
-					
-			wp_reset_query();
-			
-			$sales = get_page_by_path('sales');
-			
-			// find child pages
-			$child_pages = new WP_Query( array( 'post_parent' => $sales->ID, 'post_type' => 'page', 'orderby' => 'menu_order', 'order' => 'ASC' ) );
-			
-			if ( $child_pages->have_posts() ) :
-			
-				while ( $child_pages->have_posts() ) : $child_pages->the_post(); ?>
-				
-					<article>
-				
-						<?php the_content(); ?>
-					
-					</article>
-				
-				<?php endwhile;
-			
-			endif; ?>
-			
-		</div><!-- .get-started -->
+		<div class="site-main gray">
 		
-		<div class="testimonies">
-			
-			<?php 
-					
-			wp_reset_query();
-			
-			$testimonies = new WP_Query( array(  'post_type' => 'testimonies', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); 
+			<div class="entry get-started">
 		
-			if ( $testimonies->have_posts() ) : 
-			
-				while ( $testimonies->have_posts() ) : $testimonies->the_post(); ?>
+				<h2>Get Started</h2>
 				
-					<article>
+				<?php wp_reset_query();
 				
-						<?php the_content(); ?>
+				$sales = get_page_by_path('sales');
+				
+				// find child pages
+				$child_pages = new WP_Query( array( 'post_parent' => $sales->ID, 'post_type' => 'page', 'orderby' => 'menu_order', 'order' => 'ASC' ) );
+				
+				if ( $child_pages->have_posts() ) :
+				
+					while ( $child_pages->have_posts() ) : $child_pages->the_post();
+					
+						echo '<article id="post-'. get_the_ID() .'">';
+					
+							if ( has_post_thumbnail() ) {
+								echo '<div class="featured-image">';
+									the_post_thumbnail();
+								echo '</div>';
+							} 
 						
-					</article>
+							the_title('<h3>', '</h3>');
+											
+						echo '</article>'; ?>
+						
+						<script type="text/javascript">
+						
+						if (window.jQuery) {  
+							jQuery(document).ready(function(){
+								var postID = 'post-'+<?php the_ID(); ?>;
+								jQuery('#'+postID).click(function(){
+									window.location.href = "<?php echo get_permalink(); ?>";
+								});
+							});
+						}
+						
+						</script>
+					
+					<?php endwhile;
 				
-				<?php endwhile;
+				endif; ?>
+				
+				<div class="clear"></div>
+				
+				<h4>Not Sure? Let us help.</h4>
+				
+				<a href="/contact-us" title="Contact Our Sales Team"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/contact-our-sales-team.png" alt="Contact Our Sales Team" /></a>
+				
+			</div><!-- .get-started -->
+		
+		</div><!-- .site-main -->
+		
+		<div class="site-main">
+		
+			<div class="entry testimonies">
 			
-			endif; ?>
+				<?php wp_reset_query();
+				
+				$testimonies = new WP_Query( array(  'post_type' => 'testimonies', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); 
 			
-		</div><!-- .testimonies -->
+				if ( $testimonies->have_posts() ) : 
+				
+					while ( $testimonies->have_posts() ) : $testimonies->the_post(); ?>
+					
+						<article>
+					
+							<?php the_content(); ?>
+							
+						</article>
+					
+					<?php endwhile;
+				
+				endif; ?>
+				
+			</div><!-- .testimonies -->
+		
+		</div><!-- .site-main -->
 		
 	</div><!-- #primary -->
 

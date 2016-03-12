@@ -1284,24 +1284,56 @@ body {
 			max-width: inherit;
 			main.site-main {
 				float: none;
-				margin: 0 auto;
-				max-width: 60em;
-				text-align: center;
 				width: inherit;
 			}
-			.get-started {
-				background: $body-bd-dark-gray;
-				margin: 4em 0;
+			.entry {
+				margin: 2em auto;
+				max-width: 60em;
+				text-align: center;
+			}
+			.quote {
 				article {
-					margin: 0 auto;
-					max-width: 60em;
+					padding: .5em 8em 0;
+				}
+			}
+			.gray {
+				background: $body-bd-dark-gray url('images/get-started-bg-repeat.png') repeat 0 0;
+				color: $mn-white;
+			}
+			.get-started {
+				padding: 2em 0;
+				h2 {
+					font-size: 2.25em;
+					font-weight: 100;
+					margin-top: 0;
+					text-transform: uppercase;
+				}
+				h4 {
+					color: $mn-black;
+					margin-top: 0;
+				}
+				article {
+					cursor: hand;
+					cursor: pointer;
+					float: left;
+					padding: 3%;
+					max-width: 33%;
+					h3 {
+						font-size: 1.5em;
+						font-weight: 100;
+						margin: .5em 0 0;
+					}
+					img {
+						border-bottom: 3px solid rgba(0, 0, 0, .2);
+					}
+				}
+				article:hover {
+					background: $mn-light-gray;
 				}
 			}
 			.testimonies {
-				margin: 4em 0;
+				text-align: left;
 				article {
-					margin: 0 auto;
-					max-width: 60em;
 				}
 			}
 		}
