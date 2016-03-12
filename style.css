@@ -1033,6 +1033,26 @@ body {
     padding-top: 0;
     padding-right: 15px; }
 
+.home .site-content .content-area {
+  max-width: inherit; }
+  .home .site-content .content-area main.site-main {
+    float: none;
+    margin: 0 auto;
+    max-width: 60em;
+    text-align: center;
+    width: inherit; }
+  .home .site-content .content-area .get-started {
+    background: #655b5b;
+    margin: 4em 0; }
+    .home .site-content .content-area .get-started article {
+      margin: 0 auto;
+      max-width: 60em; }
+  .home .site-content .content-area .testimonies {
+    margin: 4em 0; }
+    .home .site-content .content-area .testimonies article {
+      margin: 0 auto;
+      max-width: 60em; }
+
 .page-parent .site-content .content-area .featured-image img {
   border-bottom: 3px solid #c4bebe; }
 .page-parent .site-content .content-area .site-main {

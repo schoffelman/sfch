@@ -56,6 +56,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 $yellow: #f6d03a;
 $body-bgcolor: #f5eeee;
 $body-bd-light-gray: #c4bebe;
+$body-bd-dark-gray: #655b5b;
 $mn-light-gray: #776c6c;
 $mn-black: #000000;
 $mn-red: #ec1c24;
@@ -1272,6 +1273,38 @@ body {
 	a.img {
 		padding-top: 0;
 		padding-right: 15px;
+	}
+}
+
+// styling for homepage 
+
+.home {
+	.site-content {
+		.content-area {
+			max-width: inherit;
+			main.site-main {
+				float: none;
+				margin: 0 auto;
+				max-width: 60em;
+				text-align: center;
+				width: inherit;
+			}
+			.get-started {
+				background: $body-bd-dark-gray;
+				margin: 4em 0;
+				article {
+					margin: 0 auto;
+					max-width: 60em;
+				}
+			}
+			.testimonies {
+				margin: 4em 0;
+				article {
+					margin: 0 auto;
+					max-width: 60em;
+				}
+			}
+		}
 	}
 }
 
