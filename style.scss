@@ -1127,6 +1127,35 @@ body {
 					}
 				}
 			}
+			.entry-leadership,
+			.entry-team {
+				float: left;
+				margin-bottom: 4em;
+				margin-right: 2%;
+				width: 48%;
+				h2 {
+					color: $mn-black;
+					font-weight: 100;
+					margin: 0;
+				}
+				.thumbnail {
+					height: 203px;
+					overflow: hidden;
+					white-space: nowrap;
+					img {
+						border-bottom: 3px solid $body-bd-light-gray;
+					}	
+				}
+				.leadership,
+				.team {
+					.position {
+						font-style: italic;
+						font-size: .8em;
+					}
+					padding: 1em;
+				}
+				
+			}
 		}
 		aside.widget-area {
 			float: left;

@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file.
+ * Template Name: Team
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -32,7 +32,7 @@ while ( have_posts() ) : the_post(); ?>
 		
 			while ( have_posts() ) : the_post();
 					
-				get_template_part( 'template-parts/content', 'testimonies' );
+				get_template_part( 'template-parts/content', 'team' );
 
 			endwhile; // End of the loop.
 
