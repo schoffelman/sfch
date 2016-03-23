@@ -14,7 +14,46 @@
 
 get_header(); ?>
 
-	<div id="home-header" class="slider"></div><!-- #home-header -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $(".owl-carousel").owlCarousel({
+			  loop: true,
+			  items: 1,
+			  center: true,
+			  nav: true,
+			  autoplay: true,
+			  autoplayHoverPause: true
+		  });
+		});
+	</script>
+
+	<div id="home-header" class="slider owl-carousel">
+		
+		<?php
+		
+		$slider = new WP_Query( array(  'category_name' => 'homepage-slider', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); 
+	
+		if ( $slider->have_posts() ) : 
+		
+			while ( $slider->have_posts() ) : $slider->the_post();
+				
+				if ( has_post_thumbnail($slider->ID) ) { 
+						
+					$slide_url = wp_get_attachment_url(get_post_thumbnail_id($slider->ID));
+						
+				} //end has_post_thumbnail()  ?>
+				
+					<div class="slide" style="background: transparent url(<?php echo $slide_url; ?>) no-repeat 0 0;">
+					
+						<?php the_title(); ?>
+					
+					</div>
+			
+			<?php endwhile;
+		
+		endif; ?>
+		
+	</div><!-- #home-header -->
 	
 	<div id="primary" class="content-area">
 		
@@ -114,7 +153,7 @@ get_header(); ?>
 				
 					while ( $testimonies->have_posts() ) : $testimonies->the_post(); ?>
 					
-						<article>
+						<div>
 						
 							<div class="thumbnail">
 						
@@ -140,7 +179,7 @@ get_header(); ?>
 							
 							</div>
 							
-						</article>
+						</div>
 					
 					<?php endwhile;
 				
