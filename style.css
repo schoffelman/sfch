@@ -1057,6 +1057,17 @@ body {
     .home .site-content .content-area .get-started h4 {
       color: #000000;
       margin-top: 0; }
+    .home .site-content .content-area .get-started .contact-sales {
+      background: transparent url("images/contact-our-sales-team.png") no-repeat 0 0;
+      display: block;
+      height: 61px;
+      margin: 0 auto;
+      width: 260px; }
+      .home .site-content .content-area .get-started .contact-sales span {
+        position: absolute;
+        left: -9999em; }
+    .home .site-content .content-area .get-started .contact-sales:hover {
+      background-image: url("images/contact-our-sales-team-hover.png"); }
     .home .site-content .content-area .get-started article {
       cursor: hand;
       cursor: pointer;
@@ -1072,7 +1083,42 @@ body {
     .home .site-content .content-area .get-started article:hover {
       background: #776c6c; }
   .home .site-content .content-area .testimonies {
-    text-align: left; }
+    text-align: left;
+    margin-bottom: 20px; }
+    .home .site-content .content-area .testimonies h2 {
+      font-weight: 100;
+      margin: 50px 0 30px;
+      text-align: center;
+      text-transform: uppercase; }
+    .home .site-content .content-area .testimonies article {
+      border-bottom: 1px solid #beb5b5;
+      border-top: 1px solid #beb5b5;
+      float: left;
+      margin: 1em 2.5%;
+      height: 275px;
+      overflow: hidden;
+      padding: 3%;
+      width: 45%; }
+      .home .site-content .content-area .testimonies article .thumbnail {
+        float: left;
+        padding-right: 15px;
+        min-height: 250px;
+        padding-top: 20px; }
+      .home .site-content .content-area .testimonies article .story {
+        font-style: italic; }
+    .home .site-content .content-area .testimonies .cta-promise {
+      margin: 40px 0 60px; }
+      .home .site-content .content-area .testimonies .cta-promise a {
+        background: transparent url("images/our-promise-to-you.png") no-repeat 0 0;
+        display: block;
+        height: 60px;
+        margin: 0 auto;
+        width: 220px; }
+        .home .site-content .content-area .testimonies .cta-promise a span {
+          left: -9999em;
+          position: absolute; }
+      .home .site-content .content-area .testimonies .cta-promise a:hover {
+        background-image: url("images/our-promise-to-you-hover.png"); }
 
 .page-parent .site-content .content-area .featured-image img {
   border-bottom: 3px solid #c4bebe; }

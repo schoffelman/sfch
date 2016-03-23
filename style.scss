@@ -1312,6 +1312,20 @@ body {
 					color: $mn-black;
 					margin-top: 0;
 				}
+				.contact-sales {
+					background: transparent url('images/contact-our-sales-team.png') no-repeat 0 0;
+					display: block;
+					height: 61px;
+					margin: 0 auto;
+					width: 260px;
+					span {
+						position: absolute;
+						left: -9999em;
+					}
+				}
+				.contact-sales:hover {
+					background-image: url('images/contact-our-sales-team-hover.png');
+				}
 				article {
 					cursor: hand;
 					cursor: pointer;
@@ -1333,7 +1347,48 @@ body {
 			}
 			.testimonies {
 				text-align: left;
+				margin-bottom: 20px;
+				h2 {
+					font-weight: 100;
+					margin: 50px 0 30px;
+					text-align: center;
+					text-transform: uppercase;
+				}
 				article {
+					border-bottom: 1px solid $mnsub-border;
+					border-top: 1px solid $mnsub-border;
+					float: left;
+					margin: 1em 2.5%;
+					height: 275px;
+					overflow: hidden;	
+					padding: 3%;
+					width: 45%;
+					.thumbnail {
+						float: left;
+						padding-right: 15px;
+						min-height: 250px;
+						padding-top: 20px;
+					}
+					.story {
+						font-style: italic;
+					}
+				}
+				.cta-promise {
+					margin: 40px 0 60px;
+					a {
+						background: transparent url('images/our-promise-to-you.png') no-repeat 0 0;
+						display: block;
+						height: 60px;
+						margin: 0 auto;
+						width: 220px;
+						span {
+							left: -9999em;
+							position: absolute;
+						}
+					}
+					a:hover {
+						background-image: url('images/our-promise-to-you-hover.png');
+					}
 				}
 			}
 		}

@@ -94,7 +94,7 @@ get_header(); ?>
 				
 				<h4>Not Sure? Let us help.</h4>
 				
-				<a href="/contact-us" title="Contact Our Sales Team"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/contact-our-sales-team.png" alt="Contact Our Sales Team" /></a>
+				<a href="/contact-us" class="contact-sales" title="Contact Our Sales Team"><span>Contact Our Sales Team</span></a>
 				
 			</div><!-- .get-started -->
 		
@@ -103,6 +103,8 @@ get_header(); ?>
 		<div class="site-main">
 		
 			<div class="entry testimonies">
+			
+				<h2>What Our Customers Are Saying</h2>
 			
 				<?php wp_reset_query();
 				
@@ -113,14 +115,44 @@ get_header(); ?>
 					while ( $testimonies->have_posts() ) : $testimonies->the_post(); ?>
 					
 						<article>
+						
+							<div class="thumbnail">
+						
+							<?php if ( has_post_thumbnail() ) { 
+								
+								the_post_thumbnail();
+							
+							} else {
+							
+								echo '<img src="'.get_stylesheet_directory_uri().'/images/leadership-team-silhouette.png" alt="'. get_the_title() .'" />';
+							
+							} //end has_post_thumbnail() 
+							
+							 ?>
+													
+							</div> 
 					
-							<?php the_content(); ?>
+							<div class="story"> 
+														
+								<?php the_content(); ?>
+								
+								<span>&mdash; <?php the_title(); ?></span>
+							
+							</div>
 							
 						</article>
 					
 					<?php endwhile;
 				
 				endif; ?>
+				
+				<div class="clear"></div>
+	
+				<div class="cta-promise">
+				
+					<a href="#" title="Our Promise to You"><span>Our Promise to You</span></a>
+				
+				</div>
 				
 			</div><!-- .testimonies -->
 		
