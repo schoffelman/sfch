@@ -45,7 +45,12 @@ get_header(); ?>
 				
 					<div class="slide" style="background: transparent url(<?php echo $slide_url; ?>) no-repeat 0 0;">
 					
-						<?php the_title(); ?>
+						<img src="<?php echo $slide_url; //yes, this is a bad css hack ?>" style="visibility: hidden;" />
+					
+						<div class="message">
+							<?php the_title(); ?>
+							<a href="#" title="Learn More"><span>Learn More</span></a>
+						</div>
 					
 					</div>
 			

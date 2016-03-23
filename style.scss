@@ -1279,7 +1279,21 @@ body {
 
 .home {
 	.slider {
-		
+		.slide { // tjs
+			position: relative;
+			.message {
+				background: $yellow;
+				display: inline-block;
+				left: 15%;
+				opacity: .8;
+				position: absolute;
+				top: 50%;
+				a {
+					display: block;
+					position: absolute;
+				}
+			}
+		}
 	}
 	.site-content {
 		.content-area {

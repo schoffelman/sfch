@@ -1033,6 +1033,18 @@ body {
     padding-top: 0;
     padding-right: 15px; }
 
+.home .slider .slide {
+  position: relative; }
+  .home .slider .slide .message {
+    background: #f6d03a;
+    display: inline-block;
+    left: 15%;
+    opacity: .8;
+    position: absolute;
+    top: 50%; }
+    .home .slider .slide .message a {
+      display: block;
+      position: absolute; }
 .home .site-content .content-area {
   max-width: inherit; }
   .home .site-content .content-area main.site-main {
