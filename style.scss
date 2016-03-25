@@ -950,6 +950,12 @@ object {
 body {
 	background: $body-bgcolor url("images/footer-background.png") repeat-x bottom left;
 }
+.desktop {
+	display: block;
+}
+.mobile {
+	display: none;
+}
 
 .site {
 	position: relative;
@@ -1637,9 +1643,6 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-	.mobile_hide {
-		display: none;
-	}
 	body {
 		.site-content {
 			margin-top: 0;
@@ -1824,7 +1827,7 @@ body {
 			}
 		}
 		
-		// Desktop Main Nav
+		// Main Nav
 		.main-navigation {
 			.nav-menu {
 				margin-right: 0;
@@ -1847,5 +1850,66 @@ body {
 				}
 			}
 		}
+	}
+	
+	
+	.site-footer {
+		clear: both;
+		height: 146px;
+		max-width: 1045px;
+		padding-top: 35px;
+		span {
+			border-right: 1px solid #222222;
+			display: inline-block;
+			float: left;
+			height: 80px;
+			padding: 20px 15px 0;
+		}
+		span.find-us {
+			display: none;
+		}
+		span.social {
+			padding-right: 0;
+		}
+		span.location {
+			border: none;
+			padding-right: 0;
+			padding-left: 10px;
+			a {
+				border: none;
+				color: $mn-white;
+				padding-top: 0;
+			}
+		}
+		span.name {
+			border: none;
+			padding-top: 30px;
+			padding-right: 20px;
+		}
+		span.logo {
+			border: none;
+			padding-right: 20px;
+			padding-left: 0;
+			a {
+				border: none;
+				padding-right: 0;
+			}
+		}
+		a {
+			display: block;
+			float: left;
+			padding-top: 10px;
+		}
+		a.img {
+			padding-top: 0;
+			padding-right: 15px;
+		}
+	}
+	.desktop,
+	.mobile_hide {
+		display: none !important;
+	}
+	.mobile {
+		display: block !important;
 	}
 }

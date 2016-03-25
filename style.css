@@ -776,6 +776,12 @@ object {
 body {
   background: #f5eeee url("images/footer-background.png") repeat-x bottom left; }
 
+.desktop {
+  display: block; }
+
+.mobile {
+  display: none; }
+
 .site {
   position: relative; }
   .site #overlay, .site #overlay-border {
@@ -1291,9 +1297,6 @@ body {
   .main-navigation ul {
     display: block; } }
 @media screen and (max-width: 767px) {
-  .mobile_hide {
-    display: none; }
-
   body .site-content {
     margin-top: 0; }
 
@@ -1437,6 +1440,55 @@ body {
           margin: 0;
           padding: 0; }
           .site-header .main-navigation .nav-menu li .sub-menu li a {
-            padding: 0; } }
+            padding: 0; }
+
+  .site-footer {
+    clear: both;
+    height: 146px;
+    max-width: 1045px;
+    padding-top: 35px; }
+    .site-footer span {
+      border-right: 1px solid #222222;
+      display: inline-block;
+      float: left;
+      height: 80px;
+      padding: 20px 15px 0; }
+    .site-footer span.find-us {
+      display: none; }
+    .site-footer span.social {
+      padding-right: 0; }
+    .site-footer span.location {
+      border: none;
+      padding-right: 0;
+      padding-left: 10px; }
+      .site-footer span.location a {
+        border: none;
+        color: #e8e1e1;
+        padding-top: 0; }
+    .site-footer span.name {
+      border: none;
+      padding-top: 30px;
+      padding-right: 20px; }
+    .site-footer span.logo {
+      border: none;
+      padding-right: 20px;
+      padding-left: 0; }
+      .site-footer span.logo a {
+        border: none;
+        padding-right: 0; }
+    .site-footer a {
+      display: block;
+      float: left;
+      padding-top: 10px; }
+    .site-footer a.img {
+      padding-top: 0;
+      padding-right: 15px; }
+
+  .desktop,
+  .mobile_hide {
+    display: none !important; }
+
+  .mobile {
+    display: block !important; } }
 
 /*# sourceMappingURL=style.css.map */
