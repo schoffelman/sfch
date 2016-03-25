@@ -117,6 +117,10 @@ template {
 	display: none;
 }
 
+.show {
+	display: block;
+}
+
 a {
 	background-color: transparent;
 }
@@ -1407,6 +1411,7 @@ body {
 					float: left;
 					padding: 3%;
 					max-width: 33%;
+					min-width: 300px;
 					h3 {
 						font-size: 1.5em;
 						font-weight: 100;
@@ -1464,6 +1469,9 @@ body {
 					a:hover {
 						background-image: url('images/our-promise-to-you-hover.png');
 					}
+				}
+				.show-more {
+					display: none;
 				}
 			}
 		}
@@ -1629,6 +1637,9 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+	.mobile_hide {
+		display: none;
+	}
 	body {
 		.site-content {
 			margin-top: 0;
@@ -1664,6 +1675,43 @@ body {
 				}
 				.owl-next:hover {
 					background-image: url('images/home-slider-mobile-nav-right-hover.png');
+				}
+			}
+		}
+		.site-content {
+			.content-area {
+				.quote {
+					article {
+						padding: .5em 2em 0;
+					}
+				}
+				.get-started {
+					article {
+						float: none;
+						margin: 0 auto;
+					}
+				}
+				.testimonies {
+					.person {
+						min-width: 300px;
+					}
+					.show-more {
+						border-top: 1px solid $body-bd-light-gray;
+						display: block;
+						margin: 10px auto 0;
+						width: 75%;
+						a {
+							background: transparent url('images/show-more.png') no-repeat 0 0;
+							display: block;
+							height: 60px;
+							margin: 0 auto;
+							width: 140px;
+							span {
+								left: -9999em;
+								position: absolute;
+							}
+						}
+					}
 				}
 			}
 		}

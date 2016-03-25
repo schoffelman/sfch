@@ -160,9 +160,11 @@ get_header(); ?>
 			
 				if ( $testimonies->have_posts() ) : 
 				
-					while ( $testimonies->have_posts() ) : $testimonies->the_post(); ?>
+					$test_count = 0;
+				
+					while ( $testimonies->have_posts() ) : $testimonies->the_post(); $test_count++; ?>
 					
-						<div class="person">
+						<div class="person<?php if ($test_count !==1) { echo " mobile_hide"; } ?>">
 						
 							<div class="thumbnail">
 						
@@ -195,6 +197,26 @@ get_header(); ?>
 				endif; ?>
 				
 				<div class="clear"></div>
+				
+				<div class="show-more">
+					
+					<a href="#" title="Show More"><span>Show More</span></a>
+					
+				</div>
+				
+				<script type="text/javascript">
+					
+					if (window.jQuery) {  
+						jQuery(document).ready(function(){
+							jQuery('.show-more').click(function(){
+								jQuery('.person').removeClass('mobile_hide').addClass('show');
+								$(this).css('display','none');
+								return false;
+							});
+						});
+					}
+					
+				</script>
 	
 				<div class="cta-promise">
 				
