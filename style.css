@@ -870,7 +870,7 @@ body {
 
 .site-content {
   position: relative;
-  margin-top: 9.6em; }
+  margin-top: 7.6em; }
   .site-content .page-header {
     background: #635a5a;
     padding: 55px 0;
@@ -1259,15 +1259,9 @@ body {
     background: #000000;
     border-top: 5px solid #ec1c24;
     height: 100%; } }
-@media screen and (min-width: 48em) {
-  .menu-toggle {
-    display: none; }
-
-  .main-navigation ul {
-    display: block; } }
-@media screen and (max-width: 60em) and (min-width: 48em) {
+@media screen and (max-width: 1007px) and (min-width: 767px) {
   body {
-    background: none; }
+    background-image: none; }
 
   .site-header .site-branding .site-title img {
     height: 55px;
@@ -1283,20 +1277,39 @@ body {
         padding: .5em 1em; }
 
   .site-content {
-    margin-top: 5.8em; }
+    margin-top: 7.6em; } }
+@media screen and (min-width: 767px) {
+  .menu-toggle {
+    display: none; }
 
-  .home .slider .slide {
-    height: 300px; }
-    .home .slider .slide .message {
-      font-size: 28px;
-      top: 1em; }
-  .home .slider .owl-controls .owl-dots {
-    bottom: 10px; }
+  .main-navigation ul {
+    display: block; } }
+@media screen and (max-width: 767px) {
+  body .site-content {
+    margin-top: 0; }
+
+  .home .slider .slide .message {
+    font-size: 24px;
+    height: 136px;
+    left: 0;
+    max-width: 100%;
+    top: 40%;
+    width: 100%; }
   .home .slider .owl-controls .owl-prev {
-    top: 4em; }
+    background-image: url("images/home-slider-mobile-nav-left.png");
+    height: 133px;
+    top: 40%;
+    width: 20px; }
+  .home .slider .owl-controls .owl-prev:hover {
+    background-image: url("images/home-slider-mobile-nav-left-hover.png"); }
   .home .slider .owl-controls .owl-next {
-    top: 4em; } }
-@media screen and (max-width: 48em) {
+    background-image: url("images/home-slider-mobile-nav-right.png");
+    height: 133px;
+    top: 40%;
+    width: 20px; }
+  .home .slider .owl-controls .owl-next:hover {
+    background-image: url("images/home-slider-mobile-nav-right-hover.png"); }
+
   .site.toggled #overlay {
     background: #000;
     display: block;
