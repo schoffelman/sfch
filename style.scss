@@ -1576,6 +1576,15 @@ body {
 	}
 }
 
+// footer background adjustment
+@media screen and (max-width: 1007px) {
+	.site-footer {
+		background: $mn-black;
+		border-top: 5px solid $mn-red;
+		height: 100%;
+	}
+}
+
 
 @media screen and (min-width: 48em) {
 	.menu-toggle {
@@ -1588,16 +1597,22 @@ body {
 
 
 @media screen and (max-width: 60em) and (min-width: 48em) {
-	
+	body {
+		background: none;
+	}
 	.site-header {
+		.site-branding .site-title img {
+			height: 55px;
+			width: 100px;
+		} 
 		// Desktop Main Nav
 		.main-navigation {
 			.nav-menu li {
 				a{
-					padding: 1.5em 1em;
+					padding: 1.6em 1em;
 				}
 				.sub-menu { 
-					top: 4.5em;
+					top: 4.7em;
 					li {
 						margin: 0;
 						padding: 0;
@@ -1605,6 +1620,33 @@ body {
 							padding: .5em 1em;
 						}
 					}
+				}
+			}
+		}
+	}
+	.site-content {
+		margin-top:5.8em;
+	}
+	.home {
+		.slider {
+			.slide {
+				height: 300px;
+				.message {
+					font-size: 28px;
+					top: 1em;
+					a {
+					}
+				}
+			}
+			.owl-controls {
+				.owl-dots {
+					bottom: 10px;
+				}
+				.owl-prev {
+					top: 4em;
+				}
+				.owl-next {
+					top: 4em;
 				}
 			}
 		}

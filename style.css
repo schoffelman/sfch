@@ -1254,6 +1254,11 @@ body {
   padding: 0;
   width: 0; }
 
+@media screen and (max-width: 1007px) {
+  .site-footer {
+    background: #000000;
+    border-top: 5px solid #ec1c24;
+    height: 100%; } }
 @media screen and (min-width: 48em) {
   .menu-toggle {
     display: none; }
@@ -1261,15 +1266,36 @@ body {
   .main-navigation ul {
     display: block; } }
 @media screen and (max-width: 60em) and (min-width: 48em) {
+  body {
+    background: none; }
+
+  .site-header .site-branding .site-title img {
+    height: 55px;
+    width: 100px; }
   .site-header .main-navigation .nav-menu li a {
-    padding: 1.5em 1em; }
+    padding: 1.6em 1em; }
   .site-header .main-navigation .nav-menu li .sub-menu {
-    top: 4.5em; }
+    top: 4.7em; }
     .site-header .main-navigation .nav-menu li .sub-menu li {
       margin: 0;
       padding: 0; }
       .site-header .main-navigation .nav-menu li .sub-menu li a {
-        padding: .5em 1em; } }
+        padding: .5em 1em; }
+
+  .site-content {
+    margin-top: 5.8em; }
+
+  .home .slider .slide {
+    height: 300px; }
+    .home .slider .slide .message {
+      font-size: 28px;
+      top: 1em; }
+  .home .slider .owl-controls .owl-dots {
+    bottom: 10px; }
+  .home .slider .owl-controls .owl-prev {
+    top: 4em; }
+  .home .slider .owl-controls .owl-next {
+    top: 4em; } }
 @media screen and (max-width: 48em) {
   .site.toggled #overlay {
     background: #000;
