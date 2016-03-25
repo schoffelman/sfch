@@ -870,7 +870,7 @@ body {
 
 .site-content {
   position: relative;
-  margin-top: 7.6em; }
+  margin-top: 9.6em; }
   .site-content .page-header {
     background: #635a5a;
     padding: 55px 0;
@@ -1033,18 +1033,55 @@ body {
     padding-top: 0;
     padding-right: 15px; }
 
-.home .slider .slide {
+.home .slider {
   position: relative; }
-  .home .slider .slide .message {
-    background: #f6d03a;
-    display: inline-block;
-    left: 15%;
-    opacity: .8;
+  .home .slider .slide {
+    height: 420px;
+    position: relative; }
+    .home .slider .slide .message {
+      background: rgba(255, 255, 255, 0.6);
+      border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+      color: #000000;
+      display: inline-block;
+      font-weight: 100;
+      font-size: 36px;
+      left: 15%;
+      line-height: 1em;
+      opacity: .8;
+      padding: 40px 40px 60px;
+      position: absolute;
+      text-transform: uppercase;
+      text-shadow: 0px 1px 1px black;
+      top: 2.9em;
+      max-width: 50%; }
+      .home .slider .slide .message a {
+        background: transparent url("images/slider-learn-more.png") no-repeat 0 0;
+        bottom: -30px;
+        display: block;
+        height: 61px;
+        position: absolute;
+        text-indent: -9999em;
+        width: 200px; }
+  .home .slider .owl-controls .owl-prev {
+    background: transparent url("images/home-slider-nav-left.png") no-repeat 0 0;
+    text-indent: -9999em;
+    height: 173px;
+    left: 0;
     position: absolute;
-    top: 50%; }
-    .home .slider .slide .message a {
-      display: block;
-      position: absolute; }
+    top: 6.5em;
+    width: 90px; }
+  .home .slider .owl-controls .owl-prev:hover {
+    background: transparent url("images/home-slider-nav-left-hover.png") no-repeat 0 0; }
+  .home .slider .owl-controls .owl-next {
+    background: transparent url("images/home-slider-nav-right.png") no-repeat 0 0;
+    text-indent: -9999em;
+    height: 173px;
+    right: 0;
+    position: absolute;
+    top: 6.5em;
+    width: 90px; }
+  .home .slider .owl-controls .owl-next:hover {
+    background: transparent url("images/home-slider-nav-right-hover.png") no-repeat 0 0; }
 .home .site-content .content-area {
   max-width: inherit; }
   .home .site-content .content-area main.site-main {
@@ -1102,7 +1139,7 @@ body {
       margin: 50px 0 30px;
       text-align: center;
       text-transform: uppercase; }
-    .home .site-content .content-area .testimonies article {
+    .home .site-content .content-area .testimonies .person {
       border-bottom: 1px solid #beb5b5;
       border-top: 1px solid #beb5b5;
       float: left;
@@ -1111,12 +1148,12 @@ body {
       overflow: hidden;
       padding: 3%;
       width: 45%; }
-      .home .site-content .content-area .testimonies article .thumbnail {
+      .home .site-content .content-area .testimonies .person .thumbnail {
         float: left;
         padding-right: 15px;
         min-height: 250px;
         padding-top: 20px; }
-      .home .site-content .content-area .testimonies article .story {
+      .home .site-content .content-area .testimonies .person .story {
         font-style: italic; }
     .home .site-content .content-area .testimonies .cta-promise {
       margin: 40px 0 60px; }

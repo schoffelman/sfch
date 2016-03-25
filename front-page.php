@@ -27,36 +27,40 @@ get_header(); ?>
 		});
 	</script>
 
-	<div id="home-header" class="slider owl-carousel">
-		
-		<?php
-		
-		$slider = new WP_Query( array(  'category_name' => 'homepage-slider', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); 
+	<div id="home-header" class="slider">
 	
-		if ( $slider->have_posts() ) : 
+		<div class="owl-carousel">
 		
-			while ( $slider->have_posts() ) : $slider->the_post();
-				
-				if ( has_post_thumbnail($slider->ID) ) { 
-						
-					$slide_url = wp_get_attachment_url(get_post_thumbnail_id($slider->ID));
-						
-				} //end has_post_thumbnail()  ?>
-				
-					<div class="slide" style="background: transparent url(<?php echo $slide_url; ?>) no-repeat 0 0;">
-					
-						<img src="<?php echo $slide_url; //yes, this is a bad css hack ?>" style="visibility: hidden;" />
-					
-						<div class="message">
-							<?php the_title(); ?>
-							<a href="#" title="Learn More"><span>Learn More</span></a>
-						</div>
-					
-					</div>
+			<?php
 			
-			<?php endwhile;
+			$slider = new WP_Query( array(  'category_name' => 'homepage-slider', 'orderby' => 'menu_order', 'order' => 'ASC' ) ); 
 		
-		endif; ?>
+			if ( $slider->have_posts() ) : 
+			
+				while ( $slider->have_posts() ) : $slider->the_post();
+					
+					if ( has_post_thumbnail($slider->ID) ) { 
+							
+						$slide_url = wp_get_attachment_url(get_post_thumbnail_id($slider->ID));
+							
+					} //end has_post_thumbnail()  ?>
+					
+						<div class="slide" style="background: transparent url(<?php echo $slide_url; ?>) no-repeat 0 0;">
+						
+							<img src="<?php echo $slide_url; //yes, this is a bad css hack ?>" style="visibility: hidden;" />
+						
+							<div class="message">
+								<?php the_title(); ?>
+								<a href="#" title="Learn More"><span>Learn More</span></a>
+							</div>
+						
+						</div>
+				
+				<?php endwhile;
+			
+			endif; ?>
+		
+		</div>
 		
 	</div><!-- #home-header -->
 	
@@ -158,7 +162,7 @@ get_header(); ?>
 				
 					while ( $testimonies->have_posts() ) : $testimonies->the_post(); ?>
 					
-						<div>
+						<div class="person">
 						
 							<div class="thumbnail">
 						
