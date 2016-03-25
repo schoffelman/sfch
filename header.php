@@ -19,7 +19,6 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/css/theme.css">
 
 <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/js/owl.carousel/assets/owl.carousel.css">
-<link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/js/owl.carousel/assets/owl.theme.default.css">
 
 <script src="<?php echo get_bloginfo('template_directory'); ?>/js/jquery-1.12.2.min.js"></script>
 <script src="<?php echo get_bloginfo('template_directory'); ?>/js/owl.carousel/owl.carousel.min.js"></script>

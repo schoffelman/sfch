@@ -885,7 +885,6 @@ body {
     max-width: 60em; }
     .site-content .content-area main.site-main {
       float: right;
-      margin-right: 2%;
       width: 65%; }
       .site-content .content-area main.site-main .entry-content {
         margin: 0; }
@@ -1062,6 +1061,20 @@ body {
         position: absolute;
         text-indent: -9999em;
         width: 200px; }
+  .home .slider .owl-controls .owl-dots {
+    bottom: 20px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 100; }
+    .home .slider .owl-controls .owl-dots .owl-dot {
+      background: transparent url("images/slider-elipse-inactive.png") no-repeat 0 0;
+      display: inline-block;
+      height: 24px;
+      margin: 3px;
+      width: 24px; }
+    .home .slider .owl-controls .owl-dots .owl-dot.active {
+      background: transparent url("images/slider-elipse-active.png") no-repeat 0 0; }
   .home .slider .owl-controls .owl-prev {
     background: transparent url("images/home-slider-nav-left.png") no-repeat 0 0;
     text-indent: -9999em;
