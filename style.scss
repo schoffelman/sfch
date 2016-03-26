@@ -1646,6 +1646,56 @@ body {
 	body {
 		.site-content {
 			margin-top: 0;
+			.page-header {
+				padding: 130px 0 10px;
+				.page-title {
+					font-size: 1.5em;
+					text-align: left;
+					padding-left: .5em;
+				}
+			}
+			.content-area { //tjs on http://localhost/sales/custom-equipment/
+				main.site-main {
+					float: none;
+					padding: 0 1em;
+					position: relative;
+					width: 100%;
+					z-index: 50;
+					.widget-area {
+						position: relative;
+						top: 0;
+						.widget {
+							display: block;
+							margin: 0;
+						}
+						.textwidget {
+							.widgetcta {
+								 bottom: -65px;
+							}
+						}
+					}
+				}
+				.widget-area {
+					float: none;
+					margin: 0 0;
+					position: absolute;
+					top: 205px;
+					width: 100%;
+					z-index: 100;
+					.widget {
+						display: none;
+					}
+					.advanced-sidebar-menu {
+						margin: 0;
+						.child-sidebar-menu {
+							margin: 0;
+						}
+					}
+					.advanced-sidebar-menu: {
+						display: block;
+					}
+				}
+			}
 		}
 	}
 	.home {
@@ -1718,7 +1768,7 @@ body {
 				}
 			}
 		}
-	}
+	}	
 	.page-parent {		
 		.site-content {
 			.page-header {
@@ -1936,10 +1986,12 @@ body {
 			padding-right: 15px;
 		}
 	}
+	.hide,
 	.desktop,
 	.mobile_hide {
 		display: none !important;
 	}
+	show,
 	.mobile {
 		display: block !important;
 	}

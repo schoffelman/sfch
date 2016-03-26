@@ -64,5 +64,12 @@ while ( have_posts() ) : the_post(); ?>
 		
 	</div><!-- #primary -->
 
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.page-title').click(function(){
+  	$('.advanced-sidebar-menu').addClass('show');
+  });
+});
+</script>
 <?php
 get_footer();

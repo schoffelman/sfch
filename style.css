@@ -1299,6 +1299,40 @@ body {
 @media screen and (max-width: 767px) {
   body .site-content {
     margin-top: 0; }
+    body .site-content .page-header {
+      padding: 130px 0 10px; }
+      body .site-content .page-header .page-title {
+        font-size: 1.5em;
+        text-align: left;
+        padding-left: .5em; }
+    body .site-content .content-area main.site-main {
+      float: none;
+      padding: 0 1em;
+      position: relative;
+      width: 100%;
+      z-index: 50; }
+      body .site-content .content-area main.site-main .widget-area {
+        position: relative;
+        top: 0; }
+        body .site-content .content-area main.site-main .widget-area .widget {
+          display: block;
+          margin: 0; }
+        body .site-content .content-area main.site-main .widget-area .textwidget .widgetcta {
+          bottom: -65px; }
+    body .site-content .content-area .widget-area {
+      float: none;
+      margin: 0 0;
+      position: absolute;
+      top: 205px;
+      width: 100%;
+      z-index: 100;
+      .advanced-sidebar-menu-display: block; }
+      body .site-content .content-area .widget-area .widget {
+        display: none; }
+      body .site-content .content-area .widget-area .advanced-sidebar-menu {
+        margin: 0; }
+        body .site-content .content-area .widget-area .advanced-sidebar-menu .child-sidebar-menu {
+          margin: 0; }
 
   .home .slider .slide .message {
     font-size: 24px;
@@ -1501,10 +1535,12 @@ body {
       padding-top: 0;
       padding-right: 15px; }
 
+  .hide,
   .desktop,
   .mobile_hide {
     display: none !important; }
 
+  show,
   .mobile {
     display: block !important; } }
 
