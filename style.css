@@ -1343,6 +1343,23 @@ body {
         left: -9999em;
         position: absolute; }
 
+  .page-parent .site-content .page-header {
+    padding: 130px 0 10px; }
+  .page-parent .site-content .content-area {
+    text-align: left; }
+    .page-parent .site-content .content-area .site-main .entry-content {
+      width: 100%;
+      padding: 0 1em; }
+      .page-parent .site-content .content-area .site-main .entry-content h1 {
+        font-size: 1.8em;
+        font-weight: 500;
+        line-height: 1.2em; }
+    .page-parent .site-content .content-area .child-content-listing .child-entry {
+      border: none;
+      float: none;
+      margin: 0 auto 30px;
+      min-width: 300px; }
+
   .site.toggled #overlay {
     background: #000;
     display: block;

@@ -1719,7 +1719,38 @@ body {
 			}
 		}
 	}
-	
+	.page-parent {		
+		.site-content {
+			.page-header {
+				padding: 130px 0 10px;
+			}
+			.content-area {
+				text-align: left;
+				.site-main {
+					.entry-content {
+						width: 100%;
+						padding: 0 1em;
+						h1 {
+							font-size: 1.8em;
+							font-weight: 500;
+							line-height: 1.2em;
+						}
+					}
+				}			
+				.child-content-listing {
+					.child-entry {
+						border: none;
+						float: none;
+						margin: 0 auto 30px;
+						min-width: 300px;
+						h4.child-title {
+							// margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 	.site.toggled {
 		#overlay {
 			background: #000;

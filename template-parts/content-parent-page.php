@@ -24,7 +24,7 @@ if ( has_post_thumbnail() ) {
 		
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<footer class="entry-footer mobile_hide">
 		<?php get_sidebar('parent-page'); ?>
 	</footer><!-- .entry-footer -->
 	
