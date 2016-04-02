@@ -241,7 +241,7 @@ textarea {
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.25; }
 
 h1,
 h2,
@@ -252,7 +252,7 @@ h6 {
   clear: both; }
 
 p {
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.25em; }
 
 dfn,
 cite,
@@ -831,7 +831,8 @@ body {
     padding-left: 25px; }
 .site-header .site-branding {
   clear: both;
-  float: left; }
+  float: left;
+  padding-left: 2em; }
   .site-header .site-branding .site-title {
     margin: 0;
     padding: 0;
@@ -879,7 +880,7 @@ body {
 
 .site-content {
   position: relative;
-  margin-top: 7.6em; }
+  margin-top: 9.6em; }
   .site-content .page-header {
     background: #635a5a;
     padding: 55px 0;
@@ -901,11 +902,11 @@ body {
           color: #000000;
           font-weight: 100; }
         .site-content .content-area main.site-main .entry-content p {
-          margin-top: 2em; }
+          margin-top: 1.25em; }
       .site-content .content-area main.site-main .entry-testimonies {
         border-bottom: 1px solid #c4bebe;
         border-top: 1px solid #c4bebe;
-        margin: 2em 0;
+        margin: 1em 0;
         padding: 2em; }
         .site-content .content-area main.site-main .entry-testimonies .thumbnail {
           float: left;
@@ -1274,22 +1275,20 @@ body {
 @media screen and (max-width: 1007px) and (min-width: 767px) {
   body {
     background-image: none; }
-
-  .site-header .site-branding .site-title img {
-    height: 55px;
-    width: 100px; }
-  .site-header .main-navigation .nav-menu li a {
-    padding: 1.6em 1em; }
-  .site-header .main-navigation .nav-menu li .sub-menu {
-    top: 4.7em; }
-    .site-header .main-navigation .nav-menu li .sub-menu li {
-      margin: 0;
-      padding: 0; }
-      .site-header .main-navigation .nav-menu li .sub-menu li a {
-        padding: .5em 1em; }
-
-  .site-content {
-    margin-top: 7.6em; } }
+    body .site-header .site-branding .site-title img {
+      height: 55px;
+      width: 100px; }
+    body .site-header .main-navigation .nav-menu li a {
+      padding: 1.6em 1em; }
+    body .site-header .main-navigation .nav-menu li .sub-menu {
+      top: 4.7em; }
+      body .site-header .main-navigation .nav-menu li .sub-menu li {
+        margin: 0;
+        padding: 0; }
+        body .site-header .main-navigation .nav-menu li .sub-menu li a {
+          padding: .5em 1em; }
+    body .site-content {
+      margin-top: 7.6em; } }
 @media screen and (min-width: 767px) {
   .menu-toggle {
     display: none; }
@@ -1297,14 +1296,49 @@ body {
   .main-navigation ul {
     display: block; } }
 @media screen and (max-width: 767px) {
+  body .site-header .site-branding .site-title {
+    margin: .5em 0; }
   body .site-content {
     margin-top: 0; }
     body .site-content .page-header {
-      padding: 130px 0 10px; }
+      padding: 121px 0 1px;
+      position: relative; }
       body .site-content .page-header .page-title {
         font-size: 1.5em;
         text-align: left;
         padding-left: .5em; }
+      body .site-content .page-header .child-nav-cntrl {
+        position: absolute;
+        right: 20px;
+        bottom: 25px; }
+      body .site-content .page-header .child-nav {
+        background: #dcd4d4;
+        box-shadow: 0px 0px 30px #000000;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        z-index: 10000; }
+        body .site-content .page-header .child-nav li a {
+          border-top: 1px solid #655b5b;
+          color: #655b5b;
+          display: block;
+          padding: 1em 0 1em 1em;
+          text-decoration: none; }
+        body .site-content .page-header .child-nav li a:hover {
+          background: #beb5b5;
+          border-top: 1px solid #a99f9f;
+          color: #000000; }
+        body .site-content .page-header .child-nav li.current_page_item a {
+          background: #beb5b5;
+          border-top: 1px solid #a99f9f;
+          color: #000000; }
+      body .site-content .page-header .child-nav.show {
+        display: block !important; }
+      body .site-content .page-header .child-nav.hide {
+        display: none !important; }
     body .site-content .content-area main.site-main {
       float: none;
       padding: 0 1em;
@@ -1389,7 +1423,6 @@ body {
         font-weight: 500;
         line-height: 1.2em; }
     .page-parent .site-content .content-area .child-content-listing .child-entry {
-      border: none;
       float: none;
       margin: 0 auto 30px;
       min-width: 300px; }

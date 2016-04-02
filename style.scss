@@ -306,7 +306,7 @@ textarea {
 	font-family: sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.25;
 }
 
 h1,
@@ -319,7 +319,7 @@ h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.25em;
 }
 
 dfn,
@@ -1014,6 +1014,7 @@ body {
 	.site-branding {
 		clear: both;
 		float: left;
+		padding-left: 2em;
 		.site-title {
 			margin: 0;
 			padding: 0;
@@ -1087,7 +1088,7 @@ body {
 
 .site-content {
 	position: relative;
-	margin-top: 7.6em; // took out for mobile
+	margin-top: 9.6em; // took out for mobile - testing for pages like /sales
 	.page-header {
 		background: $page-title-bgcolor;
 		padding: 55px 0;
@@ -1113,13 +1114,13 @@ body {
 					font-weight: 100;
 				}
 				p {
-					margin-top: 2em;
+					margin-top: 1.25em;
 				}
 			}
 			.entry-testimonies {
 				border-bottom: 1px solid $body-bd-light-gray;
 				border-top: 1px solid $body-bd-light-gray;
-				margin: 2em 0;
+				margin: 1em 0;
 				padding: 2em;
 				.thumbnail {
 					float: left;
@@ -1602,33 +1603,37 @@ body {
 @media screen and (max-width: 1007px) and (min-width: 767px) {
 	body {
 		background-image: none;
-	}
-	.site-header {
-		.site-branding .site-title img {
-			height: 55px;
-			width: 100px;
-		} 
-		// Desktop Main Nav
-		.main-navigation {
-			.nav-menu li {
-				a{
-					padding: 1.6em 1em;
+		.site-header {
+			.site-branding {
+				.site-title {
+					 img {
+						height: 55px;
+						width: 100px;
+					}
 				}
-				.sub-menu { 
-					top: 4.7em;
-					li {
-						margin: 0;
-						padding: 0;
-						a {
-							padding: .5em 1em;
+			} 
+			// Desktop Main Nav
+			.main-navigation {
+				.nav-menu li {
+					a{
+						padding: 1.6em 1em;
+					}
+					.sub-menu { 
+						top: 4.7em;
+						li {
+							margin: 0;
+							padding: 0;
+							a {
+								padding: .5em 1em;
+							}
 						}
 					}
 				}
 			}
 		}
-	}
-	.site-content {
-		margin-top:7.6em;
+		.site-content {
+			margin-top:7.6em;
+		}
 	}
 }
 
@@ -1644,14 +1649,65 @@ body {
 
 @media screen and (max-width: 767px) {
 	body {
+		.site-header {
+			.site-branding {
+				.site-title {					
+					margin: .5em 0;
+				}
+			}
+		}
 		.site-content {
 			margin-top: 0;
 			.page-header {
-				padding: 130px 0 10px;
+				padding: 121px 0 1px; // adjusted for mobile
+				position: relative;
 				.page-title {
 					font-size: 1.5em;
 					text-align: left;
 					padding-left: .5em;
+				}
+				.child-nav-cntrl {
+					position: absolute;
+					right: 20px;
+					bottom: 25px;
+				}
+				.child-nav {
+					background: $mnsub-bgcolor;
+					box-shadow: 0px 0px 30px $mn-black;
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					position: absolute;
+					text-align: left;
+					width: 100%;
+					z-index: 10000;
+					li {
+						a {
+							border-top: 1px solid $body-bd-dark-gray;
+							color: $body-bd-dark-gray;
+							display: block;
+							padding: 1em 0 1em 1em;
+							text-decoration: none;
+						}
+						a:hover {
+							background: $mnsub-border;
+							border-top: 1px solid #a99f9f;
+							color: $mn-black;
+						}
+					}
+					li.current_page_item {
+						a {
+							background: $mnsub-border;
+							border-top: 1px solid #a99f9f;
+							color: $mn-black;
+						}
+					}
+				}
+				.child-nav.show {
+					display: block !important;
+				}
+				.child-nav.hide {
+					display: none !important;
 				}
 			}
 			.content-area { //tjs on http://localhost/sales/custom-equipment/
@@ -1789,7 +1845,6 @@ body {
 				}			
 				.child-content-listing {
 					.child-entry {
-						border: none;
 						float: none;
 						margin: 0 auto 30px;
 						min-width: 300px;
