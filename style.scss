@@ -948,13 +948,13 @@ object {
 --------------------------------------------------------------*/
 
 body {
-	background: $body-bgcolor url("images/footer-background.png") repeat-x bottom left;
+	background: $body-bgcolor url("images/footer-background.png") repeat-x 0 110%;
 }
 .desktop {
 	display: block;
 }
 .mobile {
-	display: none;
+	display: none !important;
 }
 
 .site {
@@ -1014,14 +1014,13 @@ body {
 	.site-branding {
 		clear: both;
 		float: left;
-		padding-left: 2em;
 		.site-title {
 			margin: 0;
 			padding: 0;
 			position: relative;
 			float: left;
 			img {
-				margin: .25em 0 -.25em;
+				margin: .5em 0 -.25em;
 				padding: 0;
 			}
 		}
@@ -1041,7 +1040,7 @@ body {
 				padding: 2.5em 2em;
 			}
 			.sub-menu { 
-				top: 6.5em;
+				top: 6.25em;
 				li {
 					margin: 0 0 0 0;
 					padding: 0;
@@ -1088,7 +1087,7 @@ body {
 
 .site-content {
 	position: relative;
-	margin-top: 9.6em; // took out for mobile - testing for pages like /sales
+	margin-top: 7.4em; // took out for mobile - testing for pages like /sales
 	.page-header {
 		background: $page-title-bgcolor;
 		padding: 55px 0;
@@ -1605,6 +1604,7 @@ body {
 		background-image: none;
 		.site-header {
 			.site-branding {
+				padding-left: 2em;
 				.site-title {
 					 img {
 						height: 55px;
@@ -1651,6 +1651,7 @@ body {
 	body {
 		.site-header {
 			.site-branding {
+				padding-left: 2em;
 				.site-title {					
 					margin: .5em 0;
 				}
@@ -1711,12 +1712,19 @@ body {
 				}
 			}
 			.content-area { //tjs on http://localhost/sales/custom-equipment/
+				margin-top: 0;
 				main.site-main {
 					float: none;
 					padding: 0 1em;
 					position: relative;
 					width: 100%;
 					z-index: 50;
+					.entry-team,
+					.entry-leadership {
+						float: none;
+						width: 100%;
+						margin: auto 0;
+					}
 					.widget-area {
 						position: relative;
 						top: 0;

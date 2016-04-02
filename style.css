@@ -774,13 +774,13 @@ object {
 # Structure
 --------------------------------------------------------------*/
 body {
-  background: #f5eeee url("images/footer-background.png") repeat-x bottom left; }
+  background: #f5eeee url("images/footer-background.png") repeat-x 0 110%; }
 
 .desktop {
   display: block; }
 
 .mobile {
-  display: none; }
+  display: none !important; }
 
 .site {
   position: relative; }
@@ -831,15 +831,14 @@ body {
     padding-left: 25px; }
 .site-header .site-branding {
   clear: both;
-  float: left;
-  padding-left: 2em; }
+  float: left; }
   .site-header .site-branding .site-title {
     margin: 0;
     padding: 0;
     position: relative;
     float: left; }
     .site-header .site-branding .site-title img {
-      margin: .25em 0 -.25em;
+      margin: .5em 0 -.25em;
       padding: 0; }
 .site-header .main-navigation a, .site-header .main-navigation a:visited {
   color: #776c6c; }
@@ -849,7 +848,7 @@ body {
 .site-header .main-navigation .nav-menu li a {
   padding: 2.5em 2em; }
 .site-header .main-navigation .nav-menu li .sub-menu {
-  top: 6.5em; }
+  top: 6.25em; }
   .site-header .main-navigation .nav-menu li .sub-menu li {
     margin: 0 0 0 0;
     padding: 0; }
@@ -880,7 +879,7 @@ body {
 
 .site-content {
   position: relative;
-  margin-top: 9.6em; }
+  margin-top: 7.4em; }
   .site-content .page-header {
     background: #635a5a;
     padding: 55px 0;
@@ -1275,9 +1274,11 @@ body {
 @media screen and (max-width: 1007px) and (min-width: 767px) {
   body {
     background-image: none; }
-    body .site-header .site-branding .site-title img {
-      height: 55px;
-      width: 100px; }
+    body .site-header .site-branding {
+      padding-left: 2em; }
+      body .site-header .site-branding .site-title img {
+        height: 55px;
+        width: 100px; }
     body .site-header .main-navigation .nav-menu li a {
       padding: 1.6em 1em; }
     body .site-header .main-navigation .nav-menu li .sub-menu {
@@ -1296,8 +1297,10 @@ body {
   .main-navigation ul {
     display: block; } }
 @media screen and (max-width: 767px) {
-  body .site-header .site-branding .site-title {
-    margin: .5em 0; }
+  body .site-header .site-branding {
+    padding-left: 2em; }
+    body .site-header .site-branding .site-title {
+      margin: .5em 0; }
   body .site-content {
     margin-top: 0; }
     body .site-content .page-header {
@@ -1339,34 +1342,41 @@ body {
         display: block !important; }
       body .site-content .page-header .child-nav.hide {
         display: none !important; }
-    body .site-content .content-area main.site-main {
-      float: none;
-      padding: 0 1em;
-      position: relative;
-      width: 100%;
-      z-index: 50; }
-      body .site-content .content-area main.site-main .widget-area {
+    body .site-content .content-area {
+      margin-top: 0; }
+      body .site-content .content-area main.site-main {
+        float: none;
+        padding: 0 1em;
         position: relative;
-        top: 0; }
-        body .site-content .content-area main.site-main .widget-area .widget {
-          display: block;
+        width: 100%;
+        z-index: 50; }
+        body .site-content .content-area main.site-main .entry-team,
+        body .site-content .content-area main.site-main .entry-leadership {
+          float: none;
+          width: 100%;
+          margin: auto 0; }
+        body .site-content .content-area main.site-main .widget-area {
+          position: relative;
+          top: 0; }
+          body .site-content .content-area main.site-main .widget-area .widget {
+            display: block;
+            margin: 0; }
+          body .site-content .content-area main.site-main .widget-area .textwidget .widgetcta {
+            bottom: -65px; }
+      body .site-content .content-area .widget-area {
+        float: none;
+        margin: 0 0;
+        position: absolute;
+        top: 205px;
+        width: 100%;
+        z-index: 100;
+        .advanced-sidebar-menu-display: block; }
+        body .site-content .content-area .widget-area .widget {
+          display: none; }
+        body .site-content .content-area .widget-area .advanced-sidebar-menu {
           margin: 0; }
-        body .site-content .content-area main.site-main .widget-area .textwidget .widgetcta {
-          bottom: -65px; }
-    body .site-content .content-area .widget-area {
-      float: none;
-      margin: 0 0;
-      position: absolute;
-      top: 205px;
-      width: 100%;
-      z-index: 100;
-      .advanced-sidebar-menu-display: block; }
-      body .site-content .content-area .widget-area .widget {
-        display: none; }
-      body .site-content .content-area .widget-area .advanced-sidebar-menu {
-        margin: 0; }
-        body .site-content .content-area .widget-area .advanced-sidebar-menu .child-sidebar-menu {
-          margin: 0; }
+          body .site-content .content-area .widget-area .advanced-sidebar-menu .child-sidebar-menu {
+            margin: 0; }
 
   .home .slider .slide .message {
     font-size: 24px;

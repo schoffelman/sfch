@@ -71,7 +71,7 @@ while ( have_posts() ) : the_post(); ?>
 <script type="text/javascript">
 $(document).ready(function(){
 	$('.page-title').click(function(){
-	  	$('.advanced-sidebar-menu').addClass('show');
+	  	$('.advanced-sidebar-menu').toggleClass('show');
 	});
 	$('.child-nav-cntrl').click(function(){
 	  $('.child-nav').toggleClass('show');
