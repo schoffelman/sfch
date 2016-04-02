@@ -948,7 +948,7 @@ object {
 --------------------------------------------------------------*/
 
 body {
-	background: $body-bgcolor url("images/footer-background.png") repeat-x 0 110%;
+	background: $body-bgcolor url("images/footer-background.png") repeat-x left bottom;
 }
 .desktop {
 	display: block;

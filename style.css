@@ -774,7 +774,7 @@ object {
 # Structure
 --------------------------------------------------------------*/
 body {
-  background: #f5eeee url("images/footer-background.png") repeat-x 0 110%; }
+  background: #f5eeee url("images/footer-background.png") repeat-x left bottom; }
 
 .desktop {
   display: block; }
