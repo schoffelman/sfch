@@ -787,6 +787,9 @@ body {
   .site #overlay, .site #overlay-border {
     display: none; }
 
+.huge_it_slideshow_dots_thumbnails_gallery_2 {
+  bottom: 0 !important; }
+
 .site-content,
 .site-footer {
   margin: 0 auto;
