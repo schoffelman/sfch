@@ -117,7 +117,7 @@ get_header(); ?>
 								echo '</div>';
 							} 
 						
-							the_title('<h3>', '</h3>');
+							the_title('<h3><span>', '</span><img src="/wp-content/themes/sfch/images/learn-more-arrow-large.png" alt="arrow" class="arrow" /></h3>');
 											
 						echo '</article>'; ?>
 						

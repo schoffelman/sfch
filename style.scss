@@ -1453,6 +1453,14 @@ body {
 						font-size: 1.5em;
 						font-weight: 100;
 						margin: .5em 0 0;
+						span {
+							
+						}
+						.arrow {
+							border: none;
+							margin-left: 5px;
+							vertical-align: middle;
+						}
 					}
 					img {
 						border-bottom: 3px solid rgba(0, 0, 0, .2);

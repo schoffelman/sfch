@@ -1177,6 +1177,10 @@ body {
         font-size: 1.5em;
         font-weight: 100;
         margin: .5em 0 0; }
+        .home .site-content .content-area .get-started article h3 .arrow {
+          border: none;
+          margin-left: 5px;
+          vertical-align: middle; }
       .home .site-content .content-area .get-started article img {
         border-bottom: 3px solid rgba(0, 0, 0, 0.2); }
     .home .site-content .content-area .get-started article:hover {
