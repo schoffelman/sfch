@@ -1043,9 +1043,13 @@ body {
     .site-footer span.logo a {
       padding-right: 0; }
   .site-footer a {
+    color: #776c6c;
     display: block;
     float: left;
-    padding-top: 10px; }
+    padding-top: 10px;
+    text-decoration: none; }
+  .site-footer a:hover {
+    color: #214da0; }
   .site-footer a.img {
     padding-top: 0;
     padding-right: 15px; }
