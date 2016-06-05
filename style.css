@@ -834,6 +834,8 @@ body {
   .site-header .site-utility a .contact-us {
     background: transparent url("images/header-contact-icon.png") no-repeat 0 1px;
     padding-left: 25px; }
+.site-header .site-utility a:hover {
+  color: #f5eeee; }
 .site-header .site-branding {
   clear: both;
   float: left; }
