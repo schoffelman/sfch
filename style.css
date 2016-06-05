@@ -513,7 +513,7 @@ a:active {
   top: 0; }
 
 .main-navigation ul ul a {
-  width: 200px; }
+  width: 230px; }
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
@@ -797,7 +797,8 @@ body {
 
 .site-header {
   background: #f5eeee url("images/header-background.png") repeat-x 0 0;
-  height: 150px;
+  border-bottom: 1px solid #beb5b5;
+  height: 170px;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -810,7 +811,7 @@ body {
 .site-header .site-utility {
   height: 50px;
   float: right;
-  margin-right: 1.5em;
+  margin-right: 2em;
   padding-top: 14px; }
 .site-header .site-utility,
 .site-header .site-utility a {
@@ -845,7 +846,7 @@ body {
     position: relative;
     float: left; }
     .site-header .site-branding .site-title img {
-      margin: .65em 0 0;
+      margin: 1.25em 0 0;
       padding: 0; }
 .site-header .main-navigation a, .site-header .main-navigation a:visited {
   color: #776c6c; }
@@ -854,16 +855,16 @@ body {
   color: #ec1c24; }
 .site-header .main-navigation .nav-menu li a {
   font-size: .95em;
-  padding: 2.65em 1.5em; }
+  padding: 3.33em 2em; }
 .site-header .main-navigation .nav-menu li .sub-menu {
-  top: 6.25em; }
+  top: 7.45em; }
   .site-header .main-navigation .nav-menu li .sub-menu li {
     margin: 0 0 0 0;
     padding: 0; }
     .site-header .main-navigation .nav-menu li .sub-menu li a {
       border-top: 1px solid #beb5b5;
       margin: 0;
-      padding: .5em 1em; }
+      padding: .9em 1.5em; }
 .site-header .main-navigation .nav-menu li:hover {
   background: #e8e1e1; }
   .site-header .main-navigation .nav-menu li:hover a {
@@ -887,7 +888,7 @@ body {
 
 .site-content {
   position: relative;
-  margin-top: 7.4em; }
+  margin-top: 10.5em; }
   .site-content .page-header {
     background: #635a5a;
     padding: 55px 0;
@@ -1071,12 +1072,17 @@ body {
       top: 2.9em;
       max-width: 50%; }
       .home .slider .slide .message a {
-        background: transparent url("images/slider-learn-more.png") no-repeat 0 0;
+        background: #214da0 url("images/blue-button-arrow.png") no-repeat 135px 24px;
+        border-radius: 5px;
         bottom: -30px;
+        box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+        color: #f5e5b8;
         display: block;
+        font-size: 14px;
         height: 61px;
+        text-decoration: none;
+        padding: 14px 0 14px 40px;
         position: absolute;
-        text-indent: -9999em;
         width: 200px; }
   .home .slider .owl-controls .owl-dots {
     bottom: 20px;

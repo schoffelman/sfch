@@ -619,7 +619,7 @@ a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: 230px;
 }
 
 .main-navigation ul ul li {
@@ -976,7 +976,8 @@ body {
 
 .site-header {
 	background: $body-bgcolor url("images/header-background.png") repeat-x 0 0;
-	height: 150px;
+	border-bottom: 1px solid $mnsub-border;
+	height: 170px;
 	margin: 0 auto;
 	position: fixed;
 	top: 0;
@@ -992,7 +993,7 @@ body {
 	.site-utility {
 		height: 50px;
 		float: right;
-		margin-right: 1.5em;
+		margin-right: 2em;
 		padding-top: 14px;
 	}
 	.site-utility,
@@ -1029,7 +1030,7 @@ body {
 			position: relative;
 			float: left;
 			img {
-				margin: .65em 0 0;
+				margin: 1.25em 0 0;
 				padding: 0;
 			}
 		}
@@ -1047,17 +1048,17 @@ body {
 		.nav-menu li {
 			a {
 				font-size: .95em;
-				padding: 2.65em 1.5em;
+				padding: 3.33em 2em;
 			}
 			.sub-menu { 
-				top: 6.25em;
+				top: 7.45em;
 				li {
 					margin: 0 0 0 0;
 					padding: 0;
 					a {
 						border-top: 1px solid $mnsub-border;
 						margin: 0;
-						padding: .5em 1em;
+						padding: .9em 1.5em;
 					}
 				}
 			}
@@ -1097,7 +1098,7 @@ body {
 
 .site-content {
 	position: relative;
-	margin-top: 7.4em; // took out for mobile - testing for pages like /sales
+	margin-top: 10.5em; // took out for mobile - testing for pages like /sales
 	.page-header {
 		background: $page-title-bgcolor;
 		padding: 55px 0;
@@ -1320,12 +1321,17 @@ body {
 				top: 2.9em;
 				max-width: 50%;
 				a {
-					background: transparent url('images/slider-learn-more.png') no-repeat 0 0;
+					background: $page-btn-blue url('images/blue-button-arrow.png') no-repeat 135px 24px;
+					border-radius: 5px;
 					bottom: -30px;
+					box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+					color: $page-bg-yellow;
 					display: block;
+					font-size: 14px;
 					height: 61px;
+					text-decoration: none;
+					padding: 14px 0 14px 40px;
 					position: absolute;
-					text-indent: -9999em;
 					width: 200px;
 				}
 			}
