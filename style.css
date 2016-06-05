@@ -1076,8 +1076,10 @@ body {
       top: 2.9em;
       max-width: 50%; }
       .home .slider .slide .message a {
-        background: #214da0 url("images/blue-button-arrow.png") no-repeat 135px 24px;
+        background: #214da0 url("images/icon-arrow.png") no-repeat 135px 24px;
         border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
         bottom: -30px;
         box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
         color: #f5e5b8;
@@ -1147,16 +1149,23 @@ body {
       color: #000000;
       margin-top: 0; }
     .home .site-content .content-area .get-started .contact-sales {
-      background: transparent url("images/contact-our-sales-team.png") no-repeat 0 0;
+      background: #776c6c url("images/icon-arrow.png") no-repeat 210px 21px;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+      color: #f5e5b8;
       display: block;
       height: 61px;
       margin: 0 auto;
+      padding-left: 30px;
+      padding-top: 20px;
+      text-align: left;
+      text-decoration: none;
       width: 260px; }
-      .home .site-content .content-area .get-started .contact-sales span {
-        position: absolute;
-        left: -9999em; }
     .home .site-content .content-area .get-started .contact-sales:hover {
-      background-image: url("images/contact-our-sales-team-hover.png"); }
+      background: #ec1c24 url("images/icon-arrow.png") no-repeat 210px 21px;
+      color: #e8e1e1; }
     .home .site-content .content-area .get-started article {
       cursor: hand;
       cursor: pointer;
@@ -1199,16 +1208,22 @@ body {
     .home .site-content .content-area .testimonies .cta-promise {
       margin: 40px 0 60px; }
       .home .site-content .content-area .testimonies .cta-promise a {
-        background: transparent url("images/our-promise-to-you.png") no-repeat 0 0;
+        background: transparent url("images/icon-arrow-blue.png") no-repeat 175px 20px;
+        border: 2px solid #beb5b5;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        color: #776c6c;
         display: block;
         height: 60px;
         margin: 0 auto;
+        padding: 18px 0 0 30px;
+        text-decoration: none;
+        text-align: left;
         width: 220px; }
-        .home .site-content .content-area .testimonies .cta-promise a span {
-          left: -9999em;
-          position: absolute; }
       .home .site-content .content-area .testimonies .cta-promise a:hover {
-        background-image: url("images/our-promise-to-you-hover.png"); }
+        background: #214da0 url("images/icon-arrow.png") no-repeat 175px 20px;
+        color: #e8e1e1; }
     .home .site-content .content-area .testimonies .show-more {
       display: none; }
 

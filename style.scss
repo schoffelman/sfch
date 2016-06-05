@@ -1326,8 +1326,10 @@ body {
 				top: 2.9em;
 				max-width: 50%;
 				a {
-					background: $page-btn-blue url('images/blue-button-arrow.png') no-repeat 135px 24px;
+					background: $page-btn-blue url('images/icon-arrow.png') no-repeat 135px 24px;
 					border-radius: 5px;
+					-moz-border-radius: 5px;
+					-webkit-border-radius: 5px;
 					bottom: -30px;
 					box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
 					color: $page-bg-yellow;
@@ -1419,18 +1421,26 @@ body {
 					margin-top: 0;
 				}
 				.contact-sales {
-					background: transparent url('images/contact-our-sales-team.png') no-repeat 0 0;
+					background: $mn-light-gray url('images/icon-arrow.png') no-repeat 210px 21px;
+					border-radius: 5px;
+					-moz-border-radius: 5px;
+					-webkit-border-radius: 5px;
+					box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6);
+					color: $page-bg-yellow;
 					display: block;
 					height: 61px;
 					margin: 0 auto;
+					padding-left: 30px;
+					padding-top: 20px;
+					text-align: left;
+					text-decoration: none;
 					width: 260px;
 					span {
-						position: absolute;
-						left: -9999em;
 					}
 				}
 				.contact-sales:hover {
-					background-image: url('images/contact-our-sales-team-hover.png');
+					background: $mn-red url('images/icon-arrow.png') no-repeat 210px 21px;
+					color: $mn-white;
 				}
 				article {
 					cursor: hand;
@@ -1483,18 +1493,25 @@ body {
 				.cta-promise {
 					margin: 40px 0 60px;
 					a {
-						background: transparent url('images/our-promise-to-you.png') no-repeat 0 0;
+						background: transparent url('images/icon-arrow-blue.png') no-repeat 175px 20px;
+						border: 2px solid $mnsub-border;
+						border-radius: 5px;
+						-moz-border-radius: 5px;
+						-webkit-border-radius: 5px;
+						color: $mn-light-gray;
 						display: block;
 						height: 60px;
 						margin: 0 auto;
+						padding: 18px 0 0 30px;
+						text-decoration: none;
+						text-align: left;
 						width: 220px;
 						span {
-							left: -9999em;
-							position: absolute;
 						}
 					}
 					a:hover {
-						background-image: url('images/our-promise-to-you-hover.png');
+						background: $page-btn-blue url('images/icon-arrow.png') no-repeat 175px 20px;
+						color: $mn-white;
 					}
 				}
 				.show-more {
