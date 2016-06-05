@@ -797,6 +797,7 @@ body {
 
 .site-header {
   background: #f5eeee url("images/header-background.png") repeat-x 0 0;
+  height: 150px;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -809,11 +810,12 @@ body {
 .site-header .site-utility {
   height: 50px;
   float: right;
-  margin-right: 2em;
+  margin-right: 1.5em;
   padding-top: 14px; }
 .site-header .site-utility,
 .site-header .site-utility a {
   color: #f6d03a;
+  font-size: .95em;
   text-decoration: none; }
   .site-header .site-utility ul,
   .site-header .site-utility ul > li,
@@ -825,12 +827,12 @@ body {
     padding: 0; }
   .site-header .site-utility .phone,
   .site-header .site-utility a .phone {
-    background: transparent url("images/header-phone-icon.png") no-repeat 0 3px;
+    background: transparent url("images/header-phone-icon.png") no-repeat 0 1px;
     margin-right: 20px;
     padding-left: 20px; }
   .site-header .site-utility .contact-us,
   .site-header .site-utility a .contact-us {
-    background: transparent url("images/header-contact-icon.png") no-repeat 0 3px;
+    background: transparent url("images/header-contact-icon.png") no-repeat 0 1px;
     padding-left: 25px; }
 .site-header .site-branding {
   clear: both;
@@ -841,7 +843,7 @@ body {
     position: relative;
     float: left; }
     .site-header .site-branding .site-title img {
-      margin: .5em 0 -.25em;
+      margin: .65em 0 0;
       padding: 0; }
 .site-header .main-navigation a, .site-header .main-navigation a:visited {
   color: #776c6c; }
@@ -849,7 +851,8 @@ body {
   background: #e8e1e1;
   color: #ec1c24; }
 .site-header .main-navigation .nav-menu li a {
-  padding: 2.5em 2em; }
+  font-size: .95em;
+  padding: 2.65em 1.5em; }
 .site-header .main-navigation .nav-menu li .sub-menu {
   top: 6.25em; }
   .site-header .main-navigation .nav-menu li .sub-menu li {

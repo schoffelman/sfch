@@ -976,6 +976,7 @@ body {
 
 .site-header {
 	background: $body-bgcolor url("images/header-background.png") repeat-x 0 0;
+	height: 150px;
 	margin: 0 auto;
 	position: fixed;
 	top: 0;
@@ -991,12 +992,13 @@ body {
 	.site-utility {
 		height: 50px;
 		float: right;
-		margin-right: 2em;
+		margin-right: 1.5em;
 		padding-top: 14px;
 	}
 	.site-utility,
 	.site-utility a {
 		color: $yellow;
+		font-size: .95em;
 		text-decoration: none;
 		ul,
 		ul>li {
@@ -1006,12 +1008,12 @@ body {
 			padding: 0;
 		}
 		.phone {
-			background: transparent url("images/header-phone-icon.png") no-repeat 0 3px;
+			background: transparent url("images/header-phone-icon.png") no-repeat 0 1px;
 			margin-right: 20px;
 			padding-left: 20px;
 		}
 		.contact-us {
-			background: transparent url("images/header-contact-icon.png") no-repeat 0 3px;
+			background: transparent url("images/header-contact-icon.png") no-repeat 0 1px;
 			padding-left: 25px;
 		}
 	}
@@ -1024,7 +1026,7 @@ body {
 			position: relative;
 			float: left;
 			img {
-				margin: .5em 0 -.25em;
+				margin: .65em 0 0;
 				padding: 0;
 			}
 		}
@@ -1041,7 +1043,8 @@ body {
 		}
 		.nav-menu li {
 			a {
-				padding: 2.5em 2em;
+				font-size: .95em;
+				padding: 2.65em 1.5em;
 			}
 			.sub-menu { 
 				top: 6.25em;
