@@ -989,7 +989,7 @@ body {
       background: #f5e5b8;
       border-bottom: 3px solid #c4bebe;
       margin-bottom: 150px;
-      margin-top: 50px;
+      margin-top: 25px;
       padding: 30px 40px 20px;
       position: relative; }
       .site-content .content-area .entry-footer aside.widget-area {
@@ -1305,29 +1305,33 @@ body {
   width: 0; }
 
 @media screen and (max-width: 1007px) {
-  .site-footer {
+  body .site-footer {
     background: #000000;
     border-top: 5px solid #ec1c24;
     height: 100%; } }
 @media screen and (max-width: 1007px) and (min-width: 767px) {
   body {
     background-image: none; }
-    body .site-header .site-branding {
-      padding-left: 2em; }
-      body .site-header .site-branding .site-title img {
-        height: 55px;
-        width: 100px; }
-    body .site-header .main-navigation .nav-menu li a {
-      padding: 1.6em 1em; }
-    body .site-header .main-navigation .nav-menu li .sub-menu {
-      top: 4.7em; }
-      body .site-header .main-navigation .nav-menu li .sub-menu li {
-        margin: 0;
-        padding: 0; }
-        body .site-header .main-navigation .nav-menu li .sub-menu li a {
-          padding: .5em 1em; }
+    body .site-header {
+      height: 145px; }
+      body .site-header .site-branding {
+        padding-left: 2em; }
+        body .site-header .site-branding .site-title img {
+          height: 55px;
+          width: 100px; }
+      body .site-header .main-navigation .nav-menu li a {
+        padding: 2.5em 1.5em; }
+      body .site-header .main-navigation .nav-menu li .sub-menu {
+        top: 5.85em; }
+        body .site-header .main-navigation .nav-menu li .sub-menu li {
+          margin: 0;
+          padding: 0; }
     body .site-content {
-      margin-top: 7.6em; } }
+      margin-top: 9em; }
+      body .site-content .page-header {
+        padding: 55px 0 45px; }
+      body .site-content .content-area .site-main .entry-content {
+        margin-left: 3%; } }
 @media screen and (min-width: 767px) {
   .menu-toggle {
     display: none; }

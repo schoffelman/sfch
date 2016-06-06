@@ -1218,7 +1218,7 @@ body {
 			background: $page-bg-yellow;
 			border-bottom: 3px solid $body-bd-light-gray;
 			margin-bottom: 150px;
-			margin-top: 50px;
+			margin-top: 25px;
 			padding: 30px 40px 20px;
 			position: relative;
 			aside.widget-area {
@@ -1639,10 +1639,12 @@ body {
 
 // footer background adjustment
 @media screen and (max-width: 1007px) {
-	.site-footer {
-		background: $mn-black;
-		border-top: 5px solid $mn-red;
-		height: 100%;
+	body {	
+		.site-footer {
+			background: $mn-black;
+			border-top: 5px solid $mn-red;
+			height: 100%;
+		}
 	}
 }
 
@@ -1650,6 +1652,7 @@ body {
 	body {
 		background-image: none;
 		.site-header {
+			height: 145px;	
 			.site-branding {
 				padding-left: 2em;
 				.site-title {
@@ -1663,23 +1666,30 @@ body {
 			.main-navigation {
 				.nav-menu li {
 					a{
-						padding: 1.6em 1em;
+						padding: 2.5em 1.5em;
 					}
 					.sub-menu { 
-						top: 4.7em;
+						top: 5.85em;
 						li {
 							margin: 0;
 							padding: 0;
-							a {
-								padding: .5em 1em;
-							}
 						}
 					}
 				}
 			}
 		}
 		.site-content {
-			margin-top:7.6em;
+			margin-top:9em;
+			.page-header {
+				padding: 55px 0 45px;
+			}
+			.content-area {
+				.site-main {
+					.entry-content {
+						margin-left: 3%;
+					}
+				}
+			}
 		}
 	}
 }
