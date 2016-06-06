@@ -1346,7 +1346,7 @@ body {
   body .site-content {
     margin-top: 0; }
     body .site-content .page-header {
-      padding: 121px 0 1px;
+      padding: 11em 0 .5em 1.4em;
       position: relative; }
       body .site-content .page-header .page-title {
         font-size: 1.5em;
@@ -1355,7 +1355,7 @@ body {
       body .site-content .page-header .child-nav-cntrl {
         position: absolute;
         right: 20px;
-        bottom: 25px; }
+        top: 195px; }
       body .site-content .page-header .child-nav {
         background: #dcd4d4;
         box-shadow: 0px 0px 30px #000000;
@@ -1381,7 +1381,8 @@ body {
           border-top: 1px solid #a99f9f;
           color: #000000; }
       body .site-content .page-header .child-nav.show {
-        display: block !important; }
+        display: block !important;
+        margin-top: .5em; }
       body .site-content .page-header .child-nav.hide {
         display: none !important; }
     body .site-content .content-area {
@@ -1463,8 +1464,6 @@ body {
         left: -9999em;
         position: absolute; }
 
-  .page-parent .site-content .page-header {
-    padding: 130px 0 10px; }
   .page-parent .site-content .content-area {
     text-align: left; }
     .page-parent .site-content .content-area .site-main .entry-content {

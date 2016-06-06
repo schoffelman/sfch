@@ -1717,7 +1717,7 @@ body {
 		.site-content {
 			margin-top: 0;
 			.page-header {
-				padding: 121px 0 1px; // adjusted for mobile
+				padding: 11em 0 .5em 1.4em;
 				position: relative;
 				.page-title {
 					font-size: 1.5em;
@@ -1727,7 +1727,7 @@ body {
 				.child-nav-cntrl {
 					position: absolute;
 					right: 20px;
-					bottom: 25px;
+					top: 195px;
 				}
 				.child-nav {
 					background: $mnsub-bgcolor;
@@ -1763,6 +1763,7 @@ body {
 				}
 				.child-nav.show {
 					display: block !important;
+					margin-top: .5em;
 				}
 				.child-nav.hide {
 					display: none !important;
@@ -1892,9 +1893,6 @@ body {
 	}	
 	.page-parent {		
 		.site-content {
-			.page-header {
-				padding: 130px 0 10px;
-			}
 			.content-area {
 				text-align: left;
 				.site-main {
