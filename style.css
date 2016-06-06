@@ -891,10 +891,11 @@ body {
   margin-top: 10.5em; }
   .site-content .page-header {
     background: #635a5a;
-    padding: 55px 0;
+    padding: 55px 0 45px;
     text-align: center; }
     .site-content .page-header .page-title {
       color: #f6d03a;
+      font-size: 2.5em;
       font-weight: 100;
       max-width: 62.5em;
       text-transform: uppercase; }
@@ -1043,7 +1044,7 @@ body {
     .site-footer span.logo a {
       padding-right: 0; }
   .site-footer a {
-    color: #776c6c;
+    color: #f5e5b8;
     display: block;
     float: left;
     padding-top: 10px;
@@ -1289,7 +1290,7 @@ body {
       float: left; }
     .page-parent .site-content .content-area .child-content-listing .child-entry .more-link img {
       float: left;
-      margin: 5px 0 0 5px; }
+      margin: 3px 0 0 5px; }
 .page-parent .site-content .content-area .child-content-listing .child-entry:hover {
   background: #e8e1e1; }
   .page-parent .site-content .content-area .child-content-listing .child-entry:hover h1, .page-parent .site-content .content-area .child-content-listing .child-entry:hover h2, .page-parent .site-content .content-area .child-content-listing .child-entry:hover h3, .page-parent .site-content .content-area .child-content-listing .child-entry:hover h4, .page-parent .site-content .content-area .child-content-listing .child-entry:hover h5, .page-parent .site-content .content-area .child-content-listing .child-entry:hover h6 {
@@ -1504,6 +1505,7 @@ body {
       border: none;
       box-shadow: none;
       height: 40px;
+      outline: none;
       margin: 0;
       padding: 0;
       position: absolute;

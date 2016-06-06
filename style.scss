@@ -1101,10 +1101,11 @@ body {
 	margin-top: 10.5em; // took out for mobile - testing for pages like /sales
 	.page-header {
 		background: $page-title-bgcolor;
-		padding: 55px 0;
+		padding: 55px 0 45px;
 		text-align: center;
 		.page-title {
 			color: $page-title-color;
+			font-size: 2.5em;
 			font-weight: 100;
 			max-width: 62.5em;
 			text-transform: uppercase;
@@ -1286,7 +1287,7 @@ body {
 		}
 	}
 	a {
-		color: $mn-light-gray;
+		color: $page-bg-yellow;
 		display: block;
 		float: left;
 		padding-top: 10px;
@@ -1610,7 +1611,7 @@ body {
 						}
 						img {
 							float: left;
-							margin: 5px 0 0 5px;
+							margin: 3px 0 0 5px;
 						}
 					}
 				}
@@ -1944,6 +1945,7 @@ body {
 			border: none;
 			box-shadow: none;
 			height: 40px;
+			outline: none;
 			margin: 0;	
 			padding: 0;
 			position: absolute;
