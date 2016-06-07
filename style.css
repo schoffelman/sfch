@@ -1278,10 +1278,9 @@ body {
     font-size: 1.5em;
     margin: 1em 0 0;
     padding-left: .5em; }
-    .page-parent .site-content .content-area .child-content-listing .child-entry h4.child-title span, .page-parent .site-content .content-area .child-content-listing .child-entry h4.child-title img {
-      float: left; }
     .page-parent .site-content .content-area .child-content-listing .child-entry h4.child-title img {
-      margin: .1em 0 0 .25em; }
+      margin: .1em 0 0 .25em;
+      vertical-align: middle; }
   .page-parent .site-content .content-area .child-content-listing .child-entry .more-link {
     display: block;
     margin-top: 1em;

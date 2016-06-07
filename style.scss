@@ -1594,11 +1594,9 @@ body {
 						font-size: 1.5em;
 						margin: 1em 0 0;
 						padding-left: .5em;
-						span, img {
-							float: left;
-						}
 						img {
 							margin: .1em 0 0 .25em;
+							vertical-align: middle;
 						}
 					}
 					
