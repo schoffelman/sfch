@@ -1066,6 +1066,9 @@ body {
 						background: $mnsub-bgcolor;
 						color: $mn-black !important;
 					}
+					a:hover {
+						color: $mn-white !important;
+					}
 				}
 			}
 		}
