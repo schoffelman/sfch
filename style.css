@@ -1567,7 +1567,7 @@ body {
               .site-header .main-navigation.toggled .nav-menu li.menu-item-has-children.toggled ul.sub-menu li a {
                 background: #dcd4d4;
                 color: #ec1c24;
-                padding: 10px 30px 10px 15px; }
+                padding: 10px 0px 10px 15px; }
             .site-header .main-navigation.toggled .nav-menu li.menu-item-has-children.toggled ul.sub-menu .current_page_item a {
               background: #beb5b5; }
     .site-header .main-navigation .nav-menu {
