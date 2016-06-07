@@ -99,15 +99,6 @@ add_action( 'after_setup_theme', 'sfch_content_width', 0 );
  */
 function sfch_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'sfch' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
-	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar Single Page', 'sfch' ),
 		'id'            => 'single-page',
 		'description'   => '',
@@ -119,6 +110,15 @@ function sfch_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar Parent Page', 'sfch' ),
 		'id'            => 'parent-page',
+		'description'   => '',
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'sfch' ),
+		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
