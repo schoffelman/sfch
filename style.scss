@@ -1061,6 +1061,12 @@ body {
 						padding: .9em 1.5em;
 					}
 				}
+				.current_page_item {
+					a {
+						background: $mnsub-bgcolor;
+						color: $mn-black !important;
+					}
+				}
 			}
 		}
 		.nav-menu li:hover {
